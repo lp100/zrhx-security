@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/zrhx-common.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-common/zrhx-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-schedule/zrhx-schedule.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-schedule/zrhx-schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-security.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/zrhx-shiro.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/zrhx-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/zrhx-template.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-template/zrhx-template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/zrhx-web.iml" filepath="$PROJECT_DIR$/../zrhx-security/zrhx-web/zrhx-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.SysRolePermissionMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysRolePermission">
+    <id column="RelationID" jdbcType="VARCHAR" property="relationID" />
+    <result column="RoleID" jdbcType="VARCHAR" property="roleID" />
+    <result column="PermissionID" jdbcType="VARCHAR" property="permissionID" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    RelationID, RoleID, PermissionID
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_role_permission
+    where RelationID = #{relationID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_role_permission
+    where RelationID = #{relationID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.SysRolePermission">
+    insert into sys_role_permission (RelationID, RoleID, PermissionID
+      )
+    values (#{relationID,jdbcType=VARCHAR}, #{roleID,jdbcType=VARCHAR}, #{permissionID,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.SysRolePermission">
+    insert into sys_role_permission
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="relationID != null">
+        RelationID,
+      </if>
+      <if test="roleID != null">
+        RoleID,
+      </if>
+      <if test="permissionID != null">
+        PermissionID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="relationID != null">
+        #{relationID,jdbcType=VARCHAR},
+      </if>
+      <if test="roleID != null">
+        #{roleID,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionID != null">
+        #{permissionID,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.SysRolePermission">
+    update sys_role_permission
+    <set>
+      <if test="roleID != null">
+        RoleID = #{roleID,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionID != null">
+        PermissionID = #{permissionID,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where RelationID = #{relationID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.SysRolePermission">
+    update sys_role_permission
+    set RoleID = #{roleID,jdbcType=VARCHAR},
+      PermissionID = #{permissionID,jdbcType=VARCHAR}
+    where RelationID = #{relationID,jdbcType=VARCHAR}
+  </update>
+</mapper>

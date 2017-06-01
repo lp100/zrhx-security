@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.log.mapper.SysLogMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.log.model.SysLog">
+    <id column="LogID" jdbcType="VARCHAR" property="logID" />
+    <result column="AppName" jdbcType="VARCHAR" property="appName" />
+    <result column="LogType" jdbcType="INTEGER" property="logType" />
+    <result column="UserID" jdbcType="VARCHAR" property="userID" />
+    <result column="operation" jdbcType="VARCHAR" property="operation" />
+    <result column="MethodName" jdbcType="VARCHAR" property="methodName" />
+    <result column="RequestMethod" jdbcType="VARCHAR" property="requestMethod" />
+    <result column="RequestParams" jdbcType="VARCHAR" property="requestParams" />
+    <result column="RequestIp" jdbcType="VARCHAR" property="requestIp" />
+    <result column="RequestUri" jdbcType="VARCHAR" property="requestUri" />
+    <result column="ExceptionCode" jdbcType="VARCHAR" property="exceptionCode" />
+    <result column="ExceptionDetail" jdbcType="VARCHAR" property="exceptionDetail" />
+    <result column="TimeConsuming" jdbcType="BIGINT" property="timeConsuming" />
+    <result column="UserAgent" jdbcType="VARCHAR" property="userAgent" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="ModifyTime" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    LogID, AppName, LogType, UserID, operation, MethodName, RequestMethod, RequestParams, 
+    RequestIp, RequestUri, ExceptionCode, ExceptionDetail, TimeConsuming, UserAgent, 
+    CreateTime, ModifyTime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_log
+    where LogID = #{logID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_log
+    where LogID = #{logID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.log.model.SysLog">
+    insert into sys_log (LogID, AppName, LogType, 
+      UserID, operation, MethodName, 
+      RequestMethod, RequestParams, RequestIp, 
+      RequestUri, ExceptionCode, ExceptionDetail, 
+      TimeConsuming, UserAgent, CreateTime, 
+      ModifyTime)
+    values (#{logID,jdbcType=VARCHAR}, #{appName,jdbcType=VARCHAR}, #{logType,jdbcType=INTEGER}, 
+      #{userID,jdbcType=VARCHAR}, #{operation,jdbcType=VARCHAR}, #{methodName,jdbcType=VARCHAR}, 
+      #{requestMethod,jdbcType=VARCHAR}, #{requestParams,jdbcType=VARCHAR}, #{requestIp,jdbcType=VARCHAR}, 
+      #{requestUri,jdbcType=VARCHAR}, #{exceptionCode,jdbcType=VARCHAR}, #{exceptionDetail,jdbcType=VARCHAR}, 
+      #{timeConsuming,jdbcType=BIGINT}, #{userAgent,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{modifyTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.log.model.SysLog">
+    insert into sys_log
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="logID != null">
+        LogID,
+      </if>
+      <if test="appName != null">
+        AppName,
+      </if>
+      <if test="logType != null">
+        LogType,
+      </if>
+      <if test="userID != null">
+        UserID,
+      </if>
+      <if test="operation != null">
+        operation,
+      </if>
+      <if test="methodName != null">
+        MethodName,
+      </if>
+      <if test="requestMethod != null">
+        RequestMethod,
+      </if>
+      <if test="requestParams != null">
+        RequestParams,
+      </if>
+      <if test="requestIp != null">
+        RequestIp,
+      </if>
+      <if test="requestUri != null">
+        RequestUri,
+      </if>
+      <if test="exceptionCode != null">
+        ExceptionCode,
+      </if>
+      <if test="exceptionDetail != null">
+        ExceptionDetail,
+      </if>
+      <if test="timeConsuming != null">
+        TimeConsuming,
+      </if>
+      <if test="userAgent != null">
+        UserAgent,
+      </if>
+      <if test="createTime != null">
+        CreateTime,
+      </if>
+      <if test="modifyTime != null">
+        ModifyTime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="logID != null">
+        #{logID,jdbcType=VARCHAR},
+      </if>
+      <if test="appName != null">
+        #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="logType != null">
+        #{logType,jdbcType=INTEGER},
+      </if>
+      <if test="userID != null">
+        #{userID,jdbcType=VARCHAR},
+      </if>
+      <if test="operation != null">
+        #{operation,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null">
+        #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestMethod != null">
+        #{requestMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParams != null">
+        #{requestParams,jdbcType=VARCHAR},
+      </if>
+      <if test="requestIp != null">
+        #{requestIp,jdbcType=VARCHAR},
+      </if>
+      <if test="requestUri != null">
+        #{requestUri,jdbcType=VARCHAR},
+      </if>
+      <if test="exceptionCode != null">
+        #{exceptionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="exceptionDetail != null">
+        #{exceptionDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="timeConsuming != null">
+        #{timeConsuming,jdbcType=BIGINT},
+      </if>
+      <if test="userAgent != null">
+        #{userAgent,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.log.model.SysLog">
+    update sys_log
+    <set>
+      <if test="appName != null">
+        AppName = #{appName,jdbcType=VARCHAR},
+      </if>
+      <if test="logType != null">
+        LogType = #{logType,jdbcType=INTEGER},
+      </if>
+      <if test="userID != null">
+        UserID = #{userID,jdbcType=VARCHAR},
+      </if>
+      <if test="operation != null">
+        operation = #{operation,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null">
+        MethodName = #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="requestMethod != null">
+        RequestMethod = #{requestMethod,jdbcType=VARCHAR},
+      </if>
+      <if test="requestParams != null">
+        RequestParams = #{requestParams,jdbcType=VARCHAR},
+      </if>
+      <if test="requestIp != null">
+        RequestIp = #{requestIp,jdbcType=VARCHAR},
+      </if>
+      <if test="requestUri != null">
+        RequestUri = #{requestUri,jdbcType=VARCHAR},
+      </if>
+      <if test="exceptionCode != null">
+        ExceptionCode = #{exceptionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="exceptionDetail != null">
+        ExceptionDetail = #{exceptionDetail,jdbcType=VARCHAR},
+      </if>
+      <if test="timeConsuming != null">
+        TimeConsuming = #{timeConsuming,jdbcType=BIGINT},
+      </if>
+      <if test="userAgent != null">
+        UserAgent = #{userAgent,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        CreateTime = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyTime != null">
+        ModifyTime = #{modifyTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where LogID = #{logID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.log.model.SysLog">
+    update sys_log
+    set AppName = #{appName,jdbcType=VARCHAR},
+      LogType = #{logType,jdbcType=INTEGER},
+      UserID = #{userID,jdbcType=VARCHAR},
+      operation = #{operation,jdbcType=VARCHAR},
+      MethodName = #{methodName,jdbcType=VARCHAR},
+      RequestMethod = #{requestMethod,jdbcType=VARCHAR},
+      RequestParams = #{requestParams,jdbcType=VARCHAR},
+      RequestIp = #{requestIp,jdbcType=VARCHAR},
+      RequestUri = #{requestUri,jdbcType=VARCHAR},
+      ExceptionCode = #{exceptionCode,jdbcType=VARCHAR},
+      ExceptionDetail = #{exceptionDetail,jdbcType=VARCHAR},
+      TimeConsuming = #{timeConsuming,jdbcType=BIGINT},
+      UserAgent = #{userAgent,jdbcType=VARCHAR},
+      CreateTime = #{createTime,jdbcType=TIMESTAMP},
+      ModifyTime = #{modifyTime,jdbcType=TIMESTAMP}
+    where LogID = #{logID,jdbcType=VARCHAR}
+  </update>
+
+
+  <insert id="insertList" parameterType="java.util.List">
+    insert into sys_log (LogID, AppName, LogType,
+    UserID, operation, MethodName,
+    RequestMethod, RequestParams, RequestIp,
+    RequestUri, ExceptionCode, ExceptionDetail,
+    TimeConsuming, UserAgent, CreateTime,
+    ModifyTime)
+    values
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{list.logID,jdbcType=VARCHAR}, #{list.appName,jdbcType=VARCHAR}, #{list.logType,jdbcType=INTEGER},
+      #{list.userID,jdbcType=VARCHAR}, #{list.operation,jdbcType=VARCHAR}, #{list.methodName,jdbcType=VARCHAR},
+      #{list.requestMethod,jdbcType=VARCHAR}, #{list.requestParams,jdbcType=VARCHAR}, #{list.requestIp,jdbcType=VARCHAR},
+      #{list.requestUri,jdbcType=VARCHAR}, #{list.exceptionCode,jdbcType=VARCHAR}, #{list.exceptionDetail,jdbcType=VARCHAR},
+      #{list.timeConsuming,jdbcType=BIGINT}, #{list.userAgent,jdbcType=VARCHAR}, #{list.createTime,jdbcType=TIMESTAMP},
+      #{list.modifyTime,jdbcType=TIMESTAMP}
+    </foreach>
+  </insert>
+
+  <delete id="deleteBatch" parameterType="java.util.List">
+    delete from sys_log
+    where LogID IN
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.LogID,jdbcType=VARCHAR}
+    </foreach>
+  </delete>
+  <select id="queryList" parameterType="org.com.zrhx.model.SysDictionaryHeader" resultMap="BaseResultMap">
+    SELECT  *  FROM  sys_log
+    <where>
+      <if test="logType != null  and logType.trim() != ''">
+        and LogType = #{logType}
+      </if>
+    </where>
+    <choose>
+      <when test="sidx != null and sidx.trim() != ''">
+        order by ${sidx} ${order}
+      </when>
+      <otherwise>
+        order by CreateDate asc
+      </otherwise>
+    </choose>
+
+  </select>
+  <select id="queryTotal" parameterType="org.com.zrhx.model.SysDictionaryHeader" resultType="java.lang.String">
+    SELECT  COUNT(1)  FROM  sys_log
+    <where>
+      <if test="logType != null  and logType.trim() != ''">
+        and LogType = #{logType}
+      </if>
+    </where>
+  </select>
+</mapper>

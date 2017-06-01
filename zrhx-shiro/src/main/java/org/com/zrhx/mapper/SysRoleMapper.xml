@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.SysRoleMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysRole">
+    <id column="RoleID" jdbcType="VARCHAR" property="roleID" />
+    <result column="RoleName" jdbcType="VARCHAR" property="roleName" />
+    <result column="Memo" jdbcType="VARCHAR" property="memo" />
+    <result column="EnabledFlag" jdbcType="VARCHAR" property="enabledFlag" />
+    <result column="CreateBy" jdbcType="VARCHAR" property="createBy" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UpdateBy" jdbcType="VARCHAR" property="updateBy" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    RoleID, RoleName, Memo, EnabledFlag, CreateBy, CreateDate, UpdateBy, UpdateDate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_role
+    where RoleID = #{roleID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_role
+    where RoleID = #{roleID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.SysRole">
+    insert into sys_role (RoleID, RoleName, Memo, 
+      EnabledFlag, CreateBy, CreateDate, 
+      UpdateBy, UpdateDate)
+    values (#{roleID,jdbcType=VARCHAR}, #{roleName,jdbcType=VARCHAR}, #{memo,jdbcType=VARCHAR}, 
+      #{enabledFlag,jdbcType=VARCHAR}, #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.SysRole">
+    insert into sys_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="roleID != null">
+        RoleID,
+      </if>
+      <if test="roleName != null">
+        RoleName,
+      </if>
+      <if test="memo != null">
+        Memo,
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag,
+      </if>
+      <if test="createBy != null">
+        CreateBy,
+      </if>
+      <if test="createDate != null">
+        CreateDate,
+      </if>
+      <if test="updateBy != null">
+        UpdateBy,
+      </if>
+      <if test="updateDate != null">
+        UpdateDate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="roleID != null">
+        #{roleID,jdbcType=VARCHAR},
+      </if>
+      <if test="roleName != null">
+        #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.SysRole">
+    update sys_role
+    <set>
+      <if test="roleName != null">
+        RoleName = #{roleName,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        Memo = #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        CreateBy = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where RoleID = #{roleID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.SysRole">
+    update sys_role
+    set RoleName = #{roleName,jdbcType=VARCHAR},
+      Memo = #{memo,jdbcType=VARCHAR},
+      EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      CreateBy = #{createBy,jdbcType=VARCHAR},
+      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
+    where RoleID = #{roleID,jdbcType=VARCHAR}
+  </update>
+
+  <insert id="insertList" parameterType="java.util.List">
+    insert into sys_role (RoleID, RoleName, Memo,
+    EnabledFlag, CreateBy, CreateDate,
+    UpdateBy, UpdateDate)
+    values
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+     #{item.roleID,jdbcType=VARCHAR}, #{item.roleName,jdbcType=VARCHAR}, #{item.memo,jdbcType=VARCHAR},
+      #{item.enabledFlag,jdbcType=VARCHAR}, #{item.createBy,jdbcType=VARCHAR}, #{item.createDate,jdbcType=TIMESTAMP},
+      #{item.updateBy,jdbcType=VARCHAR}, #{item.updateDate,jdbcType=TIMESTAMP})
+    </foreach>
+  </insert>
+
+  <delete id="deleteBatch" parameterType="java.util.List">
+    delete from sys_role
+    where RoleID IN
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.roleID,jdbcType=VARCHAR}
+    </foreach>
+  </delete>
+
+  <select id="queryList" parameterType="org.com.zrhx.model.SysRole" resultMap="BaseResultMap">
+    SELECT  *  FROM  sys_role
+    <where>
+      <if test="roleName != null and roleName.trim() != ''">
+        and `RoleName` like concat('%',#{roleName},'%')
+      </if>
+    </where>
+    <choose>
+      <when test="sidx != null and sidx.trim() != ''">
+        order by ${sidx} ${order}
+      </when>
+      <otherwise>
+        order by CreateDate asc
+      </otherwise>
+    </choose>
+
+  </select>
+  <select id="queryTotal" parameterType="org.com.zrhx.model.SysRole" resultType="java.lang.String">
+    SELECT  COUNT(1)  FROM  sys_role
+    <where>
+      <if test="roleName != null and roleName.trim() != ''">
+        and `RoleName` like concat('%',#{roleName},'%')
+      </if>
+    </where>
+  </select>
+</mapper>

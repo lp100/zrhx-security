@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zrhx-webmvc:war">
+    <output-path>$PROJECT_DIR$/../zrhx-security/zrhx-webmvc/target</output-path>
+    <root id="archive" name="zrhx-webmvc.war">
+      <element id="artifact" artifact-name="zrhx-webmvc:war exploded" />
+    </root>
+  </artifact>
+</component>

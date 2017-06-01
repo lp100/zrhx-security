@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="zrhx-common" />
+        <module name="zrhx-schedule" />
+        <module name="zrhx-shiro" />
+        <module name="zrhx-template" />
+        <module name="zrhx-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zrhx-common" target="1.7" />
+      <module name="zrhx-gen" target="1.7" />
+      <module name="zrhx-schedule" target="1.7" />
+      <module name="zrhx-security" target="1.7" />
+      <module name="zrhx-shiro" target="1.7" />
+      <module name="zrhx-template" target="1.7" />
+      <module name="zrhx-web" target="1.7" />
+      <module name="zrhx-webmvc" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

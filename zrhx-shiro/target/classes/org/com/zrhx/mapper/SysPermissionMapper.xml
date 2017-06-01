@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.SysPermissionMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysPermission">
+    <id column="PermissionID" jdbcType="VARCHAR" property="permissionID" />
+    <result column="PermissionName" jdbcType="VARCHAR" property="permissionName" />
+    <result column="PermissionCode" jdbcType="VARCHAR" property="permissionCode" />
+    <result column="Description" jdbcType="VARCHAR" property="description" />
+    <result column="ParentID" jdbcType="VARCHAR" property="parentID" />
+    <result column="PermissionSN" jdbcType="INTEGER" property="permissionSN" />
+    <result column="Url" jdbcType="VARCHAR" property="url" />
+    <result column="PermissionType" jdbcType="VARCHAR" property="permissionType" />
+    <result column="Memo" jdbcType="VARCHAR" property="memo" />
+    <result column="EnabledFlag" jdbcType="VARCHAR" property="enabledFlag" />
+    <result column="CreateBy" jdbcType="VARCHAR" property="createBy" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UpdateBy" jdbcType="VARCHAR" property="updateBy" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    PermissionID, PermissionName, PermissionCode, Description, ParentID, PermissionSN, 
+    Url, PermissionType, Memo, EnabledFlag, CreateBy, CreateDate, UpdateBy, UpdateDate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_permission
+    where PermissionID = #{permissionID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_permission
+    where PermissionID = #{permissionID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.SysPermission">
+    insert into sys_permission (PermissionID, PermissionName, PermissionCode, 
+      Description, ParentID, PermissionSN, 
+      Url, PermissionType, Memo, 
+      EnabledFlag, CreateBy, CreateDate, 
+      UpdateBy, UpdateDate)
+    values (#{permissionID,jdbcType=VARCHAR}, #{permissionName,jdbcType=VARCHAR}, #{permissionCode,jdbcType=VARCHAR}, 
+      #{description,jdbcType=VARCHAR}, #{parentID,jdbcType=VARCHAR}, #{permissionSN,jdbcType=INTEGER}, 
+      #{url,jdbcType=VARCHAR}, #{permissionType,jdbcType=VARCHAR}, #{memo,jdbcType=VARCHAR}, 
+      #{enabledFlag,jdbcType=VARCHAR}, #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.SysPermission">
+    insert into sys_permission
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="permissionID != null">
+        PermissionID,
+      </if>
+      <if test="permissionName != null">
+        PermissionName,
+      </if>
+      <if test="permissionCode != null">
+        PermissionCode,
+      </if>
+      <if test="description != null">
+        Description,
+      </if>
+      <if test="parentID != null">
+        ParentID,
+      </if>
+      <if test="permissionSN != null">
+        PermissionSN,
+      </if>
+      <if test="url != null">
+        Url,
+      </if>
+      <if test="permissionType != null">
+        PermissionType,
+      </if>
+      <if test="memo != null">
+        Memo,
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag,
+      </if>
+      <if test="createBy != null">
+        CreateBy,
+      </if>
+      <if test="createDate != null">
+        CreateDate,
+      </if>
+      <if test="updateBy != null">
+        UpdateBy,
+      </if>
+      <if test="updateDate != null">
+        UpdateDate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="permissionID != null">
+        #{permissionID,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionName != null">
+        #{permissionName,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        #{permissionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="parentID != null">
+        #{parentID,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionSN != null">
+        #{permissionSN,jdbcType=INTEGER},
+      </if>
+      <if test="url != null">
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionType != null">
+        #{permissionType,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.SysPermission">
+    update sys_permission
+    <set>
+      <if test="permissionName != null">
+        PermissionName = #{permissionName,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionCode != null">
+        PermissionCode = #{permissionCode,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        Description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="parentID != null">
+        ParentID = #{parentID,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionSN != null">
+        PermissionSN = #{permissionSN,jdbcType=INTEGER},
+      </if>
+      <if test="url != null">
+        Url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="permissionType != null">
+        PermissionType = #{permissionType,jdbcType=VARCHAR},
+      </if>
+      <if test="memo != null">
+        Memo = #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        CreateBy = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where PermissionID = #{permissionID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.SysPermission">
+    update sys_permission
+    set PermissionName = #{permissionName,jdbcType=VARCHAR},
+      PermissionCode = #{permissionCode,jdbcType=VARCHAR},
+      Description = #{description,jdbcType=VARCHAR},
+      ParentID = #{parentID,jdbcType=VARCHAR},
+      PermissionSN = #{permissionSN,jdbcType=INTEGER},
+      Url = #{url,jdbcType=VARCHAR},
+      PermissionType = #{permissionType,jdbcType=VARCHAR},
+      Memo = #{memo,jdbcType=VARCHAR},
+      EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      CreateBy = #{createBy,jdbcType=VARCHAR},
+      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
+    where PermissionID = #{permissionID,jdbcType=VARCHAR}
+  </update>
+
+  <insert id="insertList" parameterType="java.util.List">
+    insert into sys_permission (PermissionID, PermissionName, PermissionCode,
+    Description, ParentID, PermissionSN,
+    Url, PermissionType, Memo,
+    EnabledFlag, CreateBy, CreateDate,
+    UpdateBy, UpdateDate)
+    values
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.permissionID,jdbcType=VARCHAR}, #{item.permissionName,jdbcType=VARCHAR}, #{item.permissionCode,jdbcType=VARCHAR},
+      #{item.description,jdbcType=VARCHAR}, #{item.parentID,jdbcType=VARCHAR}, #{item.permissionSN,jdbcType=INTEGER},
+      #{item.url,jdbcType=VARCHAR}, #{item.permissionType,jdbcType=VARCHAR}, #{item.memo,jdbcType=VARCHAR},
+      #{item.enabledFlag,jdbcType=VARCHAR}, #{item.createBy,jdbcType=VARCHAR}, #{item.createDate,jdbcType=TIMESTAMP},
+      #{item.updateBy,jdbcType=VARCHAR}, #{item.updateDate,jdbcType=TIMESTAMP}
+    </foreach>
+  </insert>
+
+  <delete id="deleteBatch" parameterType="java.util.List">
+    delete from sys_permission
+    where LineID IN
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.permissionID,jdbcType=VARCHAR}
+    </foreach>
+  </delete>
+
+  <select id="queryList" parameterType="org.com.zrhx.model.SysPermission" resultMap="BaseResultMap">
+    SELECT  *  FROM  sys_permission
+    <where>
+      <if test="permissionCode != null  and permissionCode.trim() != ''">
+        and PermissionCode = #{permissionCode}
+      </if>
+      <if test="parentID != null  and parentID.trim() != ''">
+        and ParentID = #{parentID}
+      </if>
+      <if test="permissionName != null and permissionName.trim() != ''">
+        and `PermissionName` like concat('%',#{permissionName},'%')
+      </if>
+    </where>
+    <choose>
+      <when test="sidx != null and sidx.trim() != ''">
+        order by ${sidx} ${order}
+      </when>
+      <otherwise>
+        order by CreateDate asc
+      </otherwise>
+    </choose>
+
+  </select>
+  <select id="queryTotal" parameterType="org.com.zrhx.model.SysPermission" resultType="java.lang.String">
+    SELECT  COUNT(1)  FROM  sys_permission
+    <where>
+      <if test="permissionCode != null  and permissionCode.trim() != ''">
+        and PermissionCode = #{permissionCode}
+      </if>
+      <if test="parentID != null  and parentID.trim() != ''">
+        and ParentID = #{parentID}
+      </if>
+      <if test="permissionName != null and permissionName.trim() != ''">
+        and `PermissionName` like concat('%',#{permissionName},'%')
+      </if>
+    </where>
+  </select>
+</mapper>

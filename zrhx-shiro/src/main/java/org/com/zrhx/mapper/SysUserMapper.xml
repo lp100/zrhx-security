@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.SysUserMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysUser">
+    <id column="UserID" jdbcType="VARCHAR" property="userID" />
+    <result column="LoginName" jdbcType="VARCHAR" property="loginName" />
+    <result column="OrgCode" jdbcType="VARCHAR" property="orgCode" />
+    <result column="Password" jdbcType="VARCHAR" property="password" />
+    <result column="LoginIP" jdbcType="VARCHAR" property="loginIP" />
+    <result column="EnabledFlag" jdbcType="VARCHAR" property="enabledFlag" />
+    <result column="UserName" jdbcType="VARCHAR" property="userName" />
+    <result column="CreateBy" jdbcType="VARCHAR" property="createBy" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="UpdateBy" jdbcType="VARCHAR" property="updateBy" />
+    <result column="UpdateDate" jdbcType="TIMESTAMP" property="updateDate" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    UserID, LoginName, OrgCode, Password, LoginIP, EnabledFlag, UserName, CreateBy, CreateDate, 
+    UpdateBy, UpdateDate
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_user
+    where UserID = #{userID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_user
+    where UserID = #{userID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.SysUser">
+    insert into sys_user (UserID, LoginName, OrgCode, 
+      Password, LoginIP, EnabledFlag, 
+      UserName, CreateBy, CreateDate, 
+      UpdateBy, UpdateDate)
+    values (#{userID,jdbcType=VARCHAR}, #{loginName,jdbcType=VARCHAR}, #{orgCode,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{loginIP,jdbcType=VARCHAR}, #{enabledFlag,jdbcType=VARCHAR}, 
+      #{userName,jdbcType=VARCHAR}, #{createBy,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, 
+      #{updateBy,jdbcType=VARCHAR}, #{updateDate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.SysUser">
+    insert into sys_user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userID != null">
+        UserID,
+      </if>
+      <if test="loginName != null">
+        LoginName,
+      </if>
+      <if test="orgCode != null">
+        OrgCode,
+      </if>
+      <if test="password != null">
+        Password,
+      </if>
+      <if test="loginIP != null">
+        LoginIP,
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag,
+      </if>
+      <if test="userName != null">
+        UserName,
+      </if>
+      <if test="createBy != null">
+        CreateBy,
+      </if>
+      <if test="createDate != null">
+        CreateDate,
+      </if>
+      <if test="updateBy != null">
+        UpdateBy,
+      </if>
+      <if test="updateDate != null">
+        UpdateDate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userID != null">
+        #{userID,jdbcType=VARCHAR},
+      </if>
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="loginIP != null">
+        #{loginIP,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.SysUser">
+    update sys_user
+    <set>
+      <if test="loginName != null">
+        LoginName = #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="orgCode != null">
+        OrgCode = #{orgCode,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        Password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="loginIP != null">
+        LoginIP = #{loginIP,jdbcType=VARCHAR},
+      </if>
+      <if test="enabledFlag != null">
+        EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="userName != null">
+        UserName = #{userName,jdbcType=VARCHAR},
+      </if>
+      <if test="createBy != null">
+        CreateBy = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null">
+        UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null">
+        UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where UserID = #{userID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.SysUser">
+    update sys_user
+    set LoginName = #{loginName,jdbcType=VARCHAR},
+      OrgCode = #{orgCode,jdbcType=VARCHAR},
+      Password = #{password,jdbcType=VARCHAR},
+      LoginIP = #{loginIP,jdbcType=VARCHAR},
+      EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
+      UserName = #{userName,jdbcType=VARCHAR},
+      CreateBy = #{createBy,jdbcType=VARCHAR},
+      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
+    where UserID = #{userID,jdbcType=VARCHAR}
+  </update>
+
+
+
+  <insert id="insertList" parameterType="java.util.List">
+    insert into sys_user (UserID, LoginName, OrgCode,
+    Password, LoginIP, EnabledFlag,
+    UserName, CreateBy, CreateDate,
+    UpdateBy, UpdateDate)
+    values
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.userID,jdbcType=VARCHAR}, #{item.loginName,jdbcType=VARCHAR}, #{item.orgCode,jdbcType=VARCHAR},
+      #{item.password,jdbcType=VARCHAR}, #{item.loginIP,jdbcType=VARCHAR}, #{item.enabledFlag,jdbcType=VARCHAR},
+      #{item.userName,jdbcType=VARCHAR}, #{item.createBy,jdbcType=VARCHAR}, #{item.createDate,jdbcType=TIMESTAMP},
+      #{item.updateBy,jdbcType=VARCHAR}, #{item.updateDate,jdbcType=TIMESTAMP}
+    </foreach>
+  </insert>
+
+  <delete id="deleteBatch" parameterType="java.util.List">
+    delete from sys_user
+    where UserID IN
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.userID,jdbcType=VARCHAR}
+    </foreach>
+  </delete>
+
+  <select id="queryList" parameterType="org.com.zrhx.model.SysUser" resultMap="BaseResultMap">
+    SELECT  *  FROM  sys_user
+    <where>
+      <if test="loginName != null and loginName.trim() != ''">
+        and `LoginName` like concat('%',#{loginName},'%')
+      </if>
+      <if test="userName != null and userName.trim() != ''">
+        and `UserName` like concat('%',#{userName},'%')
+      </if>
+    </where>
+    <choose>
+      <when test="sidx != null and sidx.trim() != ''">
+        order by ${sidx} ${order}
+      </when>
+      <otherwise>
+        order by CreateDate asc
+      </otherwise>
+    </choose>
+
+  </select>
+  <select id="queryTotal" parameterType="org.com.zrhx.model.SysUser" resultType="java.lang.Integer">
+    SELECT  COUNT(1) FROM  sys_user
+    <where>
+      <if test="loginName != null and loginName.trim() != ''">
+        and `LoginName` like concat('%',#{loginName},'%')
+      </if>
+      <if test="userName != null and userName.trim() != ''">
+        and `UserName` like concat('%',#{userName},'%')
+      </if>
+    </where>
+  </select>
+
+  <!-- 查询用户的所有权限 -->
+  <select id="queryAllPerms" parameterType="java.lang.String" resultType="java.lang.String">
+    select m.Description from sys_user_role ur
+    LEFT JOIN sys_role r ON ur.RoleID = r.RoleID AND r.EnabledFlag='0'
+    LEFT JOIN sys_role_permission rm on ur.RoleID = rm.RoleID
+    LEFT JOIN sys_permission m on rm.PermissionID = m.PermissionID AND m.EnabledFlag='0'
+    where ur.UserID = #{userID}
+  </select>
+
+  <!-- 查询用户的所有菜单ID -->
+  <select id="queryAllMenuId"  parameterType="java.lang.String" resultType="java.lang.String">
+    select distinct rm.PermissionID from sys_user_role ur
+    LEFT JOIN sys_role_permission rm on ur.RoleID= rm.RoleID
+    where ur.UserID = #{userId}
+  </select>
+
+  <update id="updatePassword" parameterType="org.com.zrhx.model.SysUser">
+    update sys_user set `Password` = #{newPassword}
+    where UserID = #{userID} and Password = #{password}
+  </update>
+
+  <select id="findByLoginName" parameterType="java.lang.String"  resultMap="BaseResultMap">
+    select * from sys_user where LoginName = #{loginName} AND EnabledFlag='0'
+  </select>
+</mapper>

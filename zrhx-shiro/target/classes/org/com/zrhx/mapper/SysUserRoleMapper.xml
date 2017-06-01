@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.SysUserRoleMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysUserRole">
+    <id column="UserroleID" jdbcType="VARCHAR" property="userroleID" />
+    <result column="RoleID" jdbcType="VARCHAR" property="roleID" />
+    <result column="UserID" jdbcType="VARCHAR" property="userID" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    UserroleID, RoleID, UserID
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from sys_user_role
+    where UserroleID = #{userroleID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from sys_user_role
+    where UserroleID = #{userroleID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.SysUserRole">
+    insert into sys_user_role (UserroleID, RoleID, UserID
+      )
+    values (#{userroleID,jdbcType=VARCHAR}, #{roleID,jdbcType=VARCHAR}, #{userID,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.SysUserRole">
+    insert into sys_user_role
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userroleID != null">
+        UserroleID,
+      </if>
+      <if test="roleID != null">
+        RoleID,
+      </if>
+      <if test="userID != null">
+        UserID,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userroleID != null">
+        #{userroleID,jdbcType=VARCHAR},
+      </if>
+      <if test="roleID != null">
+        #{roleID,jdbcType=VARCHAR},
+      </if>
+      <if test="userID != null">
+        #{userID,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.SysUserRole">
+    update sys_user_role
+    <set>
+      <if test="roleID != null">
+        RoleID = #{roleID,jdbcType=VARCHAR},
+      </if>
+      <if test="userID != null">
+        UserID = #{userID,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where UserroleID = #{userroleID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.SysUserRole">
+    update sys_user_role
+    set RoleID = #{roleID,jdbcType=VARCHAR},
+      UserID = #{userID,jdbcType=VARCHAR}
+    where UserroleID = #{userroleID,jdbcType=VARCHAR}
+  </update>
+</mapper>
