@@ -14,6 +14,7 @@
         <module>zrhx-schedule</module>
         <module>zrhx-template</module>
         <module>zrhx-web</module>
+        <module>zrhx-upload</module>
     </modules>
     <properties>
         <zrhx-version>1.0</zrhx-version>
@@ -327,6 +328,14 @@
                     <artifactId>mina-integration-jmx</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <!-- 私有jar -->
+        <dependency>
+            <groupId>org.apkinfo.api</groupId>
+            <artifactId>AXmlResourceParser</artifactId>
+            <version>1.1.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/AXmlResourceParser-1.1.1.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.thoughtworks.xstream</groupId>

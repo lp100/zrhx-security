@@ -11,5 +11,12 @@
     <artifactId>zrhx-common</artifactId>
     <packaging>jar</packaging>
     <description>公共模块</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.apkinfo.api</groupId>
+            <artifactId>AXmlResourceParser</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+    </dependencies>
 
 </project>
