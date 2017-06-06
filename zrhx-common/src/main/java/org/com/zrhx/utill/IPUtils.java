@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 /**
  * IP地址
@@ -54,5 +56,40 @@ public class IPUtils {
         
         return ip;
     }
-	
+    /**
+     * 获取服务器ip
+     * @param request
+     * @return
+     */
+    public static  String  getLocalHost(javax.servlet.http.HttpServletRequest request){
+        String reurl = request.getRequestURL().toString();
+        if (reurl.indexOf("localhost") != -1
+                || reurl.indexOf("127.0.0.1") != -1) {
+            try {
+                InetAddress addr = InetAddress.getLocalHost();
+                return  addr.getHostAddress();
+            } catch (UnknownHostException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+
+        } else {
+            String sServerIp = request.getLocalAddr();
+            return  sServerIp;
+        }
+        return null;
+    }
+
+    /**
+     * 获取上传的文件路径
+     * @param request
+     * @return
+     */
+    public static String  getFilePath(javax.servlet.http.HttpServletRequest request){
+        String host = getLocalHost(request);
+        int localPort = request.getLocalPort();
+
+        return "http://"+host+":"+localPort;
+    }
+
 }

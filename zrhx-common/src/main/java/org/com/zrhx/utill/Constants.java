@@ -37,6 +37,10 @@ public final class Constants {
 
 	public static final String UPLOAD_PATH = "upload";
 
+	/**成功**/
+	public static final String SUCCESS_CODE = "0";
+	/**失败**/
+	public static final String ERROR_CODE = "1";
 
 	/**
 	 * 菜单类型
