@@ -53,6 +53,118 @@ CREATE TABLE `schedule_job_log` (
   KEY `job_id` (`JobID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='定时任务日志';
 
+DROP TABLE IF EXISTS `sys_dictionary_header`;
+CREATE TABLE `sys_dictionary_header` (
+  `HeaderCode` varchar(50) NOT NULL  COMMENT '字典编码',
+  `HeaderName` varchar(50) DEFAULT NULL  COMMENT '字典名称',
+  `DictionaryType` varchar(10) DEFAULT NULL  COMMENT '字典类型',
+  `Memo` varchar(100) DEFAULT NULL  COMMENT '备注',
+  `EnabledFlag` varchar(1) DEFAULT '0' COMMENT '可用状态',
+  `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
+  `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
+  `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`HeaderCode`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统配置';
+
+-- ----------------------------
+-- Table structure for sys_dictionary_line
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_dictionary_line`;
+CREATE TABLE `sys_dictionary_line` (
+  `LineID` varchar(32) NOT NULL COMMENT '子配置ID',
+  `HeaderCode` varchar(50) DEFAULT NULL COMMENT '字典编码',
+  `Value` varchar(500) DEFAULT NULL COMMENT '配置值',
+  `SN` int(11) DEFAULT NULL COMMENT '排序',
+  `LineName` varchar(120) DEFAULT NULL COMMENT '配置名称',
+  `DefaultFlag` varchar(1) DEFAULT '0' COMMENT '备注',
+  `Memo` varchar(200) DEFAULT NULL COMMENT '是否默认',
+  `EnabledFlag` varchar(1) DEFAULT '0' COMMENT '可用状态',
+  `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
+  `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
+  `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`LineID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统子配置';
+
+-- ----------------------------
+-- Table structure for sys_permission
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_permission`;
+CREATE TABLE `sys_permission` (
+  `PermissionID` varchar(32) NOT NULL COMMENT '权限ID',
+  `PermissionName` varchar(50) NOT NULL COMMENT '权限名称',
+  `PermissionCode` varchar(50) NOT NULL COMMENT '权限编码',
+  `Description` varchar(500) DEFAULT NULL COMMENT '权限描述',
+  `ParentID` varchar(32) NOT NULL COMMENT '父权限ID',
+  `PermissionSN` int(11) DEFAULT NULL COMMENT '排序',
+  `Url` varchar(128) DEFAULT NULL COMMENT '地址',
+  `PermissionType` varchar(10) NOT NULL COMMENT '权限类型',
+  `Memo` varchar(500) DEFAULT NULL COMMENT '备注',
+  `EnabledFlag` varchar(1) DEFAULT '0' COMMENT '可用状态',
+  `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
+  `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
+  `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`PermissionID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='权限配置';
+
+-- ----------------------------
+-- Table structure for sys_role
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role`;
+CREATE TABLE `sys_role` (
+  `RoleID` varchar(32) NOT NULL COMMENT '角色ID',
+  `RoleName` varchar(50) NOT NULL COMMENT '角色名称',
+  `Memo` varchar(500) DEFAULT NULL COMMENT '备注',
+  `EnabledFlag` varchar(1) DEFAULT '0' COMMENT '可用状态',
+  `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
+  `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
+  `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`RoleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色管理';
+
+-- ----------------------------
+-- Table structure for sys_role_permission
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role_permission`;
+CREATE TABLE `sys_role_permission` (
+  `RelationID` varchar(32) NOT NULL,
+  `RoleID` varchar(32) NOT NULL,
+  `PermissionID` varchar(32) NOT NULL,
+  PRIMARY KEY (`RelationID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user` (
+  `UserID` varchar(32) NOT NULL COMMENT '用户ID',
+  `LoginName` varchar(80) NOT NULL COMMENT '登录名',
+  `OrgCode` varchar(32) DEFAULT NULL COMMENT '机构编码',
+  `Password` varchar(80) NOT NULL COMMENT '密码',
+  `LoginIP` varchar(18) DEFAULT NULL COMMENT '登陆',
+  `Memo` varchar(500) DEFAULT NULL COMMENT '备注',
+  `UserName` varchar(80) DEFAULT NULL COMMENT '姓名',
+  `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
+  `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
+  `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
+  `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
+  PRIMARY KEY (`UserID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='用户管理';
+
+-- ----------------------------
+-- Table structure for sys_user_role
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user_role`;
+CREATE TABLE `sys_user_role` (
+  `UserroleID` varchar(32) NOT NULL,
+  `RoleID` varchar(32) NOT NULL,
+  `UserID` varchar(32) NOT NULL,
+  PRIMARY KEY (`UserroleID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
