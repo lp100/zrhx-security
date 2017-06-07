@@ -1,4 +1,4 @@
-package ${package}.controller;
+package ${package}.org.com.zrhx.controller;
 
 import java.util.List;
 import java.util.Map;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import ${package}.entity.${className};
-import ${package}.service.${className}Service;
-import ${package}.utils.PageUtils;
-import ${package}.utils.Query;
-import ${package}.utils.R;
+import ${package}.org.com.zrhx.model.${className};
+import ${package}.org.com.zrhx.service.${className}Service;
+import ${package}.org.com.zrhx.utils.PageUtils;
+import ${package}.org.com.zrhx.utils.Query;
+import ${package}.org.com.zrhx.utils.R;
 
 
 /**

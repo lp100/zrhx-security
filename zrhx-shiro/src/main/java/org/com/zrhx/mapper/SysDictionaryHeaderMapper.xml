@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.com.zrhx.mapper.SysDictionaryHeaderMapper">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.com.zrhx.org.com.zrhx.mapper.SysDictionaryHeaderMapper">
   <resultMap id="BaseResultMap" type="org.com.zrhx.model.SysDictionaryHeader">
     <id column="HeaderCode" jdbcType="VARCHAR" property="headerCode" />
     <result column="HeaderName" jdbcType="VARCHAR" property="headerName" />
@@ -182,7 +182,7 @@
     </choose>
 
   </select>
-  <select id="queryTotal" parameterType="org.com.zrhx.model.SysDictionaryHeader" resultType="java.lang.String">
+  <select id="queryTotal" parameterType="org.com.zrhx.model.SysDictionaryHeader" resultType="java.lang.Integer">
     SELECT  COUNT(1)  FROM  sys_dictionary_header
     <where>
       <if test="headerName != null and headerName.trim() != ''">

@@ -21,7 +21,7 @@ public abstract class BaseEntity<T> implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	protected String remarks;	// 备注
+	protected String memo;	// 备注
 	protected String createBy;	// 创建者
 	protected Date createDate;	// 创建日期
 	protected String updateBy;	// 更新者
@@ -42,14 +42,20 @@ public abstract class BaseEntity<T> implements Serializable {
 
 	private List<String> list;
 
-
-
-	public String getRemarks() {
-		return remarks;
+	public String getMemo() {
+		return memo;
 	}
 
-	public void setRemarks(String remarks) {
-		this.remarks = remarks;
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+
+	public void setLimit(Integer limit) {
+		this.limit = limit;
+	}
+
+	public void setStart(Integer start) {
+		this.start = start;
 	}
 
 	public String getCreateBy() {

@@ -88,6 +88,15 @@
     <orderEntry type="library" name="Maven: org.json:json:20090211" level="project" />
     <orderEntry type="library" name="Maven: com.baidu:ueditor:1.1.2" level="project" />
     <orderEntry type="library" name="Maven: com.zrhx.mina:mina-server:0.0.2" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: org.apkinfo.api:AXmlResourceParser:1.1.1">
+        <CLASSES>
+          <root url="jar://D:/apache-maven-3.3.9/repository/org/apkinfo/api/AXmlResourceParser/1.1.1/AXmlResourceParser-1.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.9" level="project" />
     <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />

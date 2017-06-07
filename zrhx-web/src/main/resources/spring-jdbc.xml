@@ -24,7 +24,7 @@
 	</bean>
 
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-	<!--	<property name="mapperLocations" value="classpath:/org/com/**/mapper/*.xml"/>-->
+	<!--	<property name="mapperLocations" value="classpath:/org/comorg.com.zrhx.mapperpper/*.xml"/>-->
 		<!--<property name="configLocation" value="classpath:mybatis.xml" />-->
 		<property name="dataSource" ref="dataSource" />
 	</bean>
@@ -84,8 +84,8 @@
 	<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
 		<property name="patterns">
 			<list>
-				<value>org.com.zrhx.controller.*</value>
-				<value>org.com.zrhx.service.*</value>
+				<value>org.com.zrhx.org.com.zrhx.controller.*</value>
+				<value>org.com.zrhx.org.com.zrhx.service.*</value>
 			</list>
 		</property>
 	</bean>

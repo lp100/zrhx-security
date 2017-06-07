@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE org.com.zrhx.mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-org.com.zrhx.mapper.dtd">
 
-<mapper namespace="${package}.mapper.${className}Mapper">
+<org.com.zrhx.mapper namespace="${package}.org.com.zrhx.mapper.${className}Mapper">
 
 	<!-- 可根据自己的需求，是否要使用 -->
-    <resultMap type="${package}.model.${className}" id="${classname}Map">
+    <resultMap type="${package}.org.com.zrhx.model.${className}" id="${classname}Map">
 #foreach($column in $columns)
         <result property="${column.attrname}" column="${column.columnName}"/>
 #end
@@ -31,7 +31,7 @@
     </delete>
 
 	<!--保存-->
-    <insert id="insert" parameterType="${package}.model.${className}"#if($pk.extra == 'auto_increment') useGeneratedKeys="true" keyProperty="$pk.attrname"#end>
+    <insert id="insert" parameterType="${package}.org.com.zrhx.model.${className}"#if($pk.extra == 'auto_increment') useGeneratedKeys="true" keyProperty="$pk.attrname"#end>
         insert into ${tableName}
         (#foreach($column in $columns)
 			#if($column.columnName != $pk.columnName || $pk.extra != 'auto_increment')
@@ -48,7 +48,7 @@
         )
     </insert>
 
-    <insert id="insertSelective" parameterType="${package}.model.${className}"#if($pk.extra == 'auto_increment') useGeneratedKeys="true" keyProperty="$pk.attrname"#end>
+    <insert id="insertSelective" parameterType="${package}.org.com.zrhx.model.${className}"#if($pk.extra == 'auto_increment') useGeneratedKeys="true" keyProperty="$pk.attrname"#end>
         insert into ${tableName}
         <trim prefix="(" suffix=")" suffixOverrides="," >
 			#foreach($column in $columns)#if($column.columnName != $pk.columnName || $pk.extra != 'auto_increment')
@@ -71,7 +71,7 @@
         </trim>
     </insert>
 
-    <update id="updateByPrimaryKeySelective" parameterType="${package}.model.${className}" >
+    <update id="updateByPrimaryKeySelective" parameterType="${package}.org.com.zrhx.model.${className}" >
         update ${tableName}
         <set>
 			#foreach($column in $columns)
@@ -84,7 +84,7 @@
     </update>
 
 
-    <update id="updateByPrimaryKey"  parameterType="${package}.model.${className}" >
+    <update id="updateByPrimaryKey"  parameterType="${package}.org.com.zrhx.model.${className}" >
         update ${tableName}
 		#foreach($column in $columns)
 			#if($column.columnName != $pk.columnName||($column.columnName !='createDate'&&$column.columnName !='createBy'))
@@ -124,7 +124,7 @@
         </foreach>
     </delete>
 
-    <select id="queryList" parameterType="${package}.model.${className}" resultMap="${classname}Map">
+    <select id="queryList" parameterType="${package}.org.com.zrhx.model.${className}" resultMap="${classname}Map">
         SELECT  *  FROM   ${tableName}
         WHERE   AND EnabledFlag='0'
 			#foreach($column in $columns)
@@ -155,7 +155,7 @@
         </choose>
 
     </select>
-    <select id="queryTotal"  parameterType="${package}.model.${className}"  resultType="java.lang.String">
+    <select id="queryTotal"  parameterType="${package}.org.com.zrhx.model.${className}"  resultType="java.lang.Integer">
         SELECT  COUNT(1)  FROM   ${tableName}
         WHERE   AND EnabledFlag='0'
 			#foreach($column in $columns)
@@ -178,4 +178,4 @@
     </select>
 
 
-</mapper>
+</org.com.zrhx.mapper>

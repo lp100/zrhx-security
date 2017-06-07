@@ -25,6 +25,14 @@ public interface   BaseService<T extends BaseEntity<T>> {
      * @return
      */
     public List<T> findListByWhere(T record);
+
+    /**
+     * 根据条件查询数据列表
+     *
+     * @param record
+     * @return
+     */
+    public Integer findCount(T record);
     /**
      * 分页查询
      *
@@ -33,7 +41,7 @@ public interface   BaseService<T extends BaseEntity<T>> {
      * @param record
      * @return
      */
-    public PageInfo<T> findPageListByWhere(Integer pageNum, Integer pageSize, T record);
+    public PageInfo<T>  findPageListByWhere(Integer pageNum, Integer pageSize, T record);
 
     /**
      * 新增数据，返回成功的条数

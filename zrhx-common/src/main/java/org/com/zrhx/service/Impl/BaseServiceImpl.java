@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 import java.util.Date;
 import java.util.List;
 
-@Transactional
+@Transactional(readOnly = true)
 @Service
 public abstract class BaseServiceImpl<T extends BaseEntity<T> ,D extends BaseDao<T>>implements BaseService<T> {
 
@@ -33,7 +33,7 @@ public abstract class BaseServiceImpl<T extends BaseEntity<T> ,D extends BaseDao
 		return mapper.queryList(record);
 	}
 
-	@Transactional(readOnly = true)
+
 	@Override
 	public PageInfo<T> findPageListByWhere(Integer pageNum, Integer pageSize, T record) {
 		// 设置分页条件
@@ -82,5 +82,10 @@ public abstract class BaseServiceImpl<T extends BaseEntity<T> ,D extends BaseDao
 	@Override
 	public Integer deleteByIds( List<T> values) {
 		return mapper.deleteBatch(values);
+	}
+
+	@Override
+	public Integer findCount(T record) {
+		return mapper.queryTotal(record);
 	}
 }

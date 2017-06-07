@@ -11,5 +11,25 @@
 
     <artifactId>zrhx-schedule</artifactId>
     <packaging>jar</packaging>
+    <description>定时任务模块</description>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz-version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>c3p0</artifactId>
+                    <groupId>c3p0</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <artifactId>zrhx-common</artifactId>
+            <groupId>org.zrhx</groupId>
+            <version>${zrhx-version}</version>
+        </dependency>
+    </dependencies>
 </project>

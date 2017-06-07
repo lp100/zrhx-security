@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.com.zrhx.mapper.ScheduleJobConfigMapper" >
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.ScheduleJobConfig" >
+    <id column="JobID" property="jobID" jdbcType="VARCHAR" />
+    <result column="BeanName" property="beanName" jdbcType="VARCHAR" />
+    <result column="MethodName" property="methodName" jdbcType="VARCHAR" />
+    <result column="Params" property="params" jdbcType="VARCHAR" />
+    <result column="CronExpression" property="cronExpression" jdbcType="VARCHAR" />
+    <result column="Status" property="status" jdbcType="TINYINT" />
+    <result column="Memo" property="memo" jdbcType="VARCHAR" />
+    <result column="CreateDate" property="createDate" jdbcType="TIMESTAMP" />
+    <result column="CreateBy" property="createBy" jdbcType="VARCHAR" />
+    <result column="UpdateDate" property="updateDate" jdbcType="TIMESTAMP" />
+    <result column="UpdateBy" property="updateBy" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    JobID, BeanName, MethodName, Params, CronExpression, Status, Memo, CreateDate, CreateBy, 
+    UpdateDate, UpdateBy
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from schedule_job_config
+    where JobID = #{jobID,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from schedule_job_config
+    where JobID = #{jobID,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="org.com.zrhx.model.ScheduleJobConfig" >
+    insert into schedule_job_config (JobID, BeanName, MethodName, 
+      Params, CronExpression, Status, 
+      Memo, CreateDate, CreateBy, 
+      UpdateDate, UpdateBy)
+    values (#{jobID,jdbcType=VARCHAR}, #{beanName,jdbcType=VARCHAR}, #{methodName,jdbcType=VARCHAR}, 
+      #{params,jdbcType=VARCHAR}, #{cronExpression,jdbcType=VARCHAR}, #{status,jdbcType=TINYINT}, 
+      #{memo,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP}, #{createBy,jdbcType=VARCHAR}, 
+      #{updateDate,jdbcType=TIMESTAMP}, #{updateBy,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.ScheduleJobConfig" >
+    insert into schedule_job_config
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="jobID != null" >
+        JobID,
+      </if>
+      <if test="beanName != null" >
+        BeanName,
+      </if>
+      <if test="methodName != null" >
+        MethodName,
+      </if>
+      <if test="params != null" >
+        Params,
+      </if>
+      <if test="cronExpression != null" >
+        CronExpression,
+      </if>
+      <if test="status != null" >
+        Status,
+      </if>
+      <if test="memo != null" >
+        Memo,
+      </if>
+      <if test="createDate != null" >
+        CreateDate,
+      </if>
+      <if test="createBy != null" >
+        CreateBy,
+      </if>
+      <if test="updateDate != null" >
+        UpdateDate,
+      </if>
+      <if test="updateBy != null" >
+        UpdateBy,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="jobID != null" >
+        #{jobID,jdbcType=VARCHAR},
+      </if>
+      <if test="beanName != null" >
+        #{beanName,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null" >
+        #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="params != null" >
+        #{params,jdbcType=VARCHAR},
+      </if>
+      <if test="cronExpression != null" >
+        #{cronExpression,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="memo != null" >
+        #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null" >
+        #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null" >
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        #{updateBy,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.ScheduleJobConfig" >
+    update schedule_job_config
+    <set >
+      <if test="beanName != null" >
+        BeanName = #{beanName,jdbcType=VARCHAR},
+      </if>
+      <if test="methodName != null" >
+        MethodName = #{methodName,jdbcType=VARCHAR},
+      </if>
+      <if test="params != null" >
+        Params = #{params,jdbcType=VARCHAR},
+      </if>
+      <if test="cronExpression != null" >
+        CronExpression = #{cronExpression,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        Status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="memo != null" >
+        Memo = #{memo,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null" >
+        CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createBy != null" >
+        CreateBy = #{createBy,jdbcType=VARCHAR},
+      </if>
+      <if test="updateDate != null" >
+        UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateBy != null" >
+        UpdateBy = #{updateBy,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where JobID = #{jobID,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.ScheduleJobConfig" >
+    update schedule_job_config
+    set BeanName = #{beanName,jdbcType=VARCHAR},
+      MethodName = #{methodName,jdbcType=VARCHAR},
+      Params = #{params,jdbcType=VARCHAR},
+      CronExpression = #{cronExpression,jdbcType=VARCHAR},
+      Status = #{status,jdbcType=TINYINT},
+      Memo = #{memo,jdbcType=VARCHAR},
+      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+      CreateBy = #{createBy,jdbcType=VARCHAR},
+      UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
+      UpdateBy = #{updateBy,jdbcType=VARCHAR}
+    where JobID = #{jobID,jdbcType=VARCHAR}
+  </update>
+
+
+  <insert id="insertList" parameterType="java.util.List">
+    insert into schedule_job_config (JobID, BeanName, MethodName,
+    Params, CronExpression, Status,
+    Memo, CreateDate, CreateBy,
+    UpdateDate, UpdateBy)
+    values
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.jobID,jdbcType=VARCHAR}, #{item.beanName,jdbcType=VARCHAR}, #{item.methodName,jdbcType=VARCHAR},
+      #{item.params,jdbcType=VARCHAR}, #{item.cronExpression,jdbcType=VARCHAR}, #{item.status,jdbcType=TINYINT},
+      #{item.memo,jdbcType=VARCHAR}, #{item.createDate,jdbcType=TIMESTAMP}, #{item.createBy,jdbcType=VARCHAR},
+      #{item.updateDate,jdbcType=TIMESTAMP}, #{item.updateBy,jdbcType=VARCHAR}
+    </foreach>
+  </insert>
+
+  <delete id="deleteBatch" parameterType="java.util.List">
+    delete from schedule_job_config
+    where JobID IN
+    <foreach close=")" collection="list" item="item" open="(" separator=",">
+      #{item.jobID,jdbcType=VARCHAR}
+    </foreach>
+  </delete>
+
+  <select id="queryList" parameterType="org.com.zrhx.model.ScheduleJobConfig" resultMap="BaseResultMap">
+    SELECT  *  FROM  schedule_job_config
+    <where>
+      <if test="beanName != null  and beanName.trim() != ''">
+        and BeanName  like concat('%',#{beanName},'%')
+      </if>
+      <if test="methodName != null  and methodName.trim() != ''">
+        and MethodName like concat('%',#{methodName},'%')
+      </if>
+    </where>
+    <choose>
+      <when test="sidx != null and sidx.trim() != ''">
+        order by ${sidx} ${order}
+      </when>
+      <otherwise>
+        order by CreateDate asc
+      </otherwise>
+    </choose>
+
+  </select>
+  <select id="queryTotal" parameterType="org.com.zrhx.model.ScheduleJobConfig" resultType="java.lang.Integer">
+    SELECT  COUNT(1)  FROM  schedule_job_config
+    <where>
+      <if test="beanName != null  and beanName.trim() != ''">
+        and BeanName  like concat('%',#{beanName},'%')
+      </if>
+      <if test="methodName != null  and methodName.trim() != ''">
+        and MethodName like concat('%',#{methodName},'%')
+      </if>
+    </where>
+  </select>
+
+  <!-- 批量更新状态 -->
+  <update id="updateBatchStatus" parameterType="org.com.zrhx.model.ScheduleJobConfig">
+    update schedule_job set status = #{status} where job_id in
+    <foreach item="jobId" collection="list"  open="(" separator="," close=")">
+      #{jobId}
+    </foreach>
+  </update>
+</mapper>

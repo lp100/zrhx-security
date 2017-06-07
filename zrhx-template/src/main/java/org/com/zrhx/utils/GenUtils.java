@@ -178,27 +178,27 @@ public class GenUtils {
 		}
 		
 		if(template.contains("Entity.java.vm")){
-			return packagePath + "model" + File.separator + className + ".java";
+			return packagePath + "org.com.zrhx.model" + File.separator + className + ".java";
 		}
 		
 		if(template.contains("Dao.java.vm")){
-			return packagePath + "mapper" + File.separator + className + "Mapper.java";
+			return packagePath + "org.com.zrhx.mapper" + File.separator + className + "Mapper.java";
 		}
 		
 		if(template.contains("Dao.xml.vm")){
-			return packagePath + "mapper" + File.separator + className + "Mapper.xml";
+			return packagePath + "org.com.zrhx.mapper" + File.separator + className + "Mapper.xml";
 		}
 		
 		if(template.contains("Service.java.vm")){
-			return packagePath + "service" + File.separator + className + "Service.java";
+			return packagePath + "org.com.zrhx.service" + File.separator + className + "Service.java";
 		}
 		
 		if(template.contains("ServiceImpl.java.vm")){
-			return packagePath + "service" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
+			return packagePath + "org.com.zrhx.service" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
 		}
 		
 		if(template.contains("Controller.java.vm")){
-			return packagePath + "controller" + File.separator + className + "Controller.java";
+			return packagePath + "org.com.zrhx.controller" + File.separator + className + "Controller.java";
 		}
 		
 		if(template.contains("list.html.vm")){
