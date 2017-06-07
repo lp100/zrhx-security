@@ -4,11 +4,10 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 
 /**
- * Shiro权限标签(Velocity版)
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2016年12月3日 下午11:32:47
+ * @Title: VelocityShiro
+ * @Description: Shiro权限标签(Velocity版)
+ * @author: gs
+ * @date: 2017/6/7 18:05
  */
 public class VelocityShiro {
 
