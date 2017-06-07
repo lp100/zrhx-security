@@ -258,4 +258,22 @@
       </if>
     </where>
   </select>
+
+  <select id="queryListParentId" resultType="org.com.zrhx.model.SysPermission" parameterType="java.lang.String">
+    select * from sys_permission where ParentID = #{parentID} order by PermissionSN asc
+  </select>
+
+  <select id="queryNotButtonList" resultType="org.com.zrhx.model.SysPermission">
+    select * from sys_permission where type != 2 order by PermissionSN asc
+  </select>
+  <!-- 查询用户的权限列表 -->
+  <select id="queryUserList"  resultType="org.com.zrhx.model.SysPermission" parameterType="java.lang.String">
+    select DISTINCT sp.PermissionID ,sp.*,psp.PermissionName AS parentName from  sys_user_role sur
+		inner join sys_role sr on sur.RoleID = sr.RoleID AND sr.EnabledFlag = '0'
+		inner join sys_role_permission srp on sr.RoleID = srp.RoleID
+		inner join sys_permission sp on srp.PermissionID = sp.PermissionID AND sp.EnabledFlag = '0'
+    LEFT  JOIN sys_permission  psp ON sp.ParentID = psp.PermissionID
+		where sur.UserID =  #{userId}
+		order by PermissionSN,sp.PermissionID
+  </select>
 </mapper>

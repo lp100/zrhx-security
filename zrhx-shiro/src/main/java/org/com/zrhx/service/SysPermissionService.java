@@ -7,11 +7,10 @@ import java.util.List;
 
 
 /**
- * 菜单管理
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2016年9月18日 上午9:42:16
+ * @Title: SysPermissionServiceImpl
+ * @Description:  权限管理
+ * @author: gs
+ * @date: 2017/6/7 16:58
  */
 public interface SysPermissionService extends BaseService<SysPermission>{
 
@@ -20,7 +19,7 @@ public interface SysPermissionService extends BaseService<SysPermission>{
 	 * @param parentId 父菜单ID
 	 * @param menuIdList  用户菜单ID
 	 */
-	List<SysPermission> queryListParentId(Long parentId, List<Long> menuIdList);
+	List<SysPermission> queryListParentId(String parentId, List<String> menuIdList);
 	
 	/**
 	 * 获取不包含按钮的菜单列表
@@ -30,5 +29,5 @@ public interface SysPermissionService extends BaseService<SysPermission>{
 	/**
 	 * 查询用户的权限列表
 	 */
-	List<SysPermission> queryUserList(Long userId);
+	List<SysPermission> queryUserList(String userId);
 }

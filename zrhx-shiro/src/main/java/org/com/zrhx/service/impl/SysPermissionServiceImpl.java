@@ -3,6 +3,7 @@ package org.com.zrhx.service.impl;
 import org.com.zrhx.mapper.SysPermissionMapper;
 import org.com.zrhx.model.SysPermission;
 import org.com.zrhx.service.Impl.BaseServiceImpl;
+import org.com.zrhx.service.SysPermissionService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,9 +13,9 @@ import java.util.List;
  */
 
 @Service("sysPermissionService")
-public class SysPermissionService  extends BaseServiceImpl<SysPermission,SysPermissionMapper> implements org.com.zrhx.service.SysPermissionService {
+public class SysPermissionServiceImpl extends BaseServiceImpl<SysPermission,SysPermissionMapper> implements SysPermissionService {
     @Override
-    public List<SysPermission> queryListParentId(Long parentId, List<Long> menuIdList) {
+    public List<SysPermission> queryListParentId(String parentId, List<String> menuIdList) {
         return null;
     }
 
@@ -24,7 +25,7 @@ public class SysPermissionService  extends BaseServiceImpl<SysPermission,SysPerm
     }
 
     @Override
-    public List<SysPermission> queryUserList(Long userId) {
-        return null;
+    public List<SysPermission> queryUserList(String userId) {
+        return mapper.queryUserList(userId);
     }
 }

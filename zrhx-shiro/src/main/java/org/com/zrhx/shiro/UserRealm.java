@@ -12,6 +12,7 @@ import org.com.zrhx.model.SysUser;
 import org.com.zrhx.service.SysPermissionService;
 import org.com.zrhx.service.SysUserService;
 
+import org.com.zrhx.utill.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
@@ -39,7 +40,7 @@ public class UserRealm extends AuthorizingRealm {
 		List<String> permsList = null;
 		
 		//系统管理员，拥有最高权限
-		if("1".equals(userId)){
+		if(Constants.ADMINISTRATOR_USERID.equals(userId)){
 			List<SysPermission> permissionList = sysPermissionService.findListByWhere(null);
 			permsList = new ArrayList<>(permissionList.size());
 			for(SysPermission  menu : permissionList){
