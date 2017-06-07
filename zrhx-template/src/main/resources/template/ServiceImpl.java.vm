@@ -1,15 +1,15 @@
-package ${package}.org.com.zrhx.service.impl;
+package ${package}.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
-import ${package}.org.com.zrhx.mapper.${className}Mapper;
-import ${package}.org.com.zrhx.model.${className};
-import org.com.zrhx.org.com.zrhx.service.BaseServiceImpl;
-import ${package}.org.com.zrhx.model.${className};
-import ${package}.org.com.zrhx.service.${className}Service;
+import ${package}.mapper.${className}Mapper;
+import ${package}.model.${className};
+import ${package}.service.BaseServiceImpl;
+import ${package}.model.${className};
+import ${package}.service.${className}Service;
 
 
 

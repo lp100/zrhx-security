@@ -1,6 +1,6 @@
-package ${package}.org.com.zrhx.service;
+package ${package}.service;
 
-import ${package}.org.com.zrhx.model.${className};
+import ${package}.model.${className};
 
 import java.util.List;
 import java.util.Map;

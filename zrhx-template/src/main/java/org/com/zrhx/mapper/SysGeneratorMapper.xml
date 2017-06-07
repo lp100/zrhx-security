@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE org.com.zrhx.mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-org.com.zrhx.mapper.dtd">
-
-<org.com.zrhx.mapper namespace="org.com.zrhx.org.com.zrhx.mapper.SysGeneratorMapper">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.com.zrhx.mapper.SysGeneratorMapper">
 	<select id="queryList" resultType="java.util.Map">
 		select table_name tableName, engine, table_comment tableComment, create_time createTime from information_schema.tables 
 			where table_schema = (select database()) 
@@ -30,4 +29,4 @@
 		select column_name columnName, data_type dataType, column_comment columnComment, column_key columnKey, extra from information_schema.columns
  			where table_name = #{tableName} and table_schema = (select database()) order by ordinal_position
 	</select>
-</org.com.zrhx.mapper>
+</mapper>

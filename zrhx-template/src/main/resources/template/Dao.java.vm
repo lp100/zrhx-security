@@ -1,6 +1,6 @@
-package ${package}.org.com.zrhx.mapper;
+package ${package}.mapper;
 
-import ${package}.org.com.zrhx.model.${className};
+import ${package}.model.${className};
 
 /**
  * ${comments}
