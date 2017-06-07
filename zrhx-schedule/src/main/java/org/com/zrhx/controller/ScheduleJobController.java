@@ -37,7 +37,7 @@ public class ScheduleJobController extends BaseController<ScheduleJobController>
 //
 //		return R.ok().put("page", pageUtil);
 		PageInfo<ScheduleJobConfig> pageInfo = scheduleJobService.findPageListByWhere(page,rows,params);
-		return R.ok().put("page", pageInfo);
+		return R.page(pageInfo.getSize(),pageInfo.getList());
 	}
 	
 	/**

@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="org.com.zrhx.mapper.ScheduleJobLogMapper" >
-  <resultMap id="BaseResultMap" type="org.com.zrhx.model.ScheduleJobLog" >
-    <id column="LogID" property="logID" jdbcType="VARCHAR" />
-    <result column="JobID" property="jobID" jdbcType="VARCHAR" />
-    <result column="BeanName" property="beanName" jdbcType="VARCHAR" />
-    <result column="MethodName" property="methodName" jdbcType="VARCHAR" />
-    <result column="Params" property="params" jdbcType="VARCHAR" />
-    <result column="Satus" property="satus" jdbcType="TINYINT" />
-    <result column="Error" property="error" jdbcType="VARCHAR" />
-    <result column="Times" property="times" jdbcType="INTEGER" />
-    <result column="CreateDate" property="createDate" jdbcType="TIMESTAMP" />
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.com.zrhx.mapper.ScheduleJobLogMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.model.ScheduleJobLog">
+    <id column="LogID" jdbcType="VARCHAR" property="logID" />
+    <result column="JobID" jdbcType="VARCHAR" property="jobID" />
+    <result column="BeanName" jdbcType="VARCHAR" property="beanName" />
+    <result column="MethodName" jdbcType="VARCHAR" property="methodName" />
+    <result column="Params" jdbcType="VARCHAR" property="params" />
+    <result column="Satus" jdbcType="TINYINT" property="satus" />
+    <result column="Error" jdbcType="VARCHAR" property="error" />
+    <result column="Times" jdbcType="INTEGER" property="times" />
+    <result column="CreateDate" jdbcType="TIMESTAMP" property="createDate" />
   </resultMap>
-  <sql id="Base_Column_List" >
+  <sql id="Base_Column_List">
     LogID, JobID, BeanName, MethodName, Params, Satus, Error, Times, CreateDate
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from schedule_job_log
     where LogID = #{logID,jdbcType=VARCHAR}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
     delete from schedule_job_log
     where LogID = #{logID,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="org.com.zrhx.model.ScheduleJobLog" >
+  <insert id="insert" parameterType="org.com.zrhx.model.ScheduleJobLog">
     insert into schedule_job_log (LogID, JobID, BeanName, 
       MethodName, Params, Satus, 
       Error, Times, CreateDate
@@ -35,98 +35,98 @@
       #{error,jdbcType=VARCHAR}, #{times,jdbcType=INTEGER}, #{createDate,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="org.com.zrhx.model.ScheduleJobLog" >
+  <insert id="insertSelective" parameterType="org.com.zrhx.model.ScheduleJobLog">
     insert into schedule_job_log
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="logID != null" >
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="logID != null">
         LogID,
       </if>
-      <if test="jobID != null" >
+      <if test="jobID != null">
         JobID,
       </if>
-      <if test="beanName != null" >
+      <if test="beanName != null">
         BeanName,
       </if>
-      <if test="methodName != null" >
+      <if test="methodName != null">
         MethodName,
       </if>
-      <if test="params != null" >
+      <if test="params != null">
         Params,
       </if>
-      <if test="satus != null" >
+      <if test="satus != null">
         Satus,
       </if>
-      <if test="error != null" >
+      <if test="error != null">
         Error,
       </if>
-      <if test="times != null" >
+      <if test="times != null">
         Times,
       </if>
-      <if test="createDate != null" >
+      <if test="createDate != null">
         CreateDate,
       </if>
     </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="logID != null" >
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="logID != null">
         #{logID,jdbcType=VARCHAR},
       </if>
-      <if test="jobID != null" >
+      <if test="jobID != null">
         #{jobID,jdbcType=VARCHAR},
       </if>
-      <if test="beanName != null" >
+      <if test="beanName != null">
         #{beanName,jdbcType=VARCHAR},
       </if>
-      <if test="methodName != null" >
+      <if test="methodName != null">
         #{methodName,jdbcType=VARCHAR},
       </if>
-      <if test="params != null" >
+      <if test="params != null">
         #{params,jdbcType=VARCHAR},
       </if>
-      <if test="satus != null" >
+      <if test="satus != null">
         #{satus,jdbcType=TINYINT},
       </if>
-      <if test="error != null" >
+      <if test="error != null">
         #{error,jdbcType=VARCHAR},
       </if>
-      <if test="times != null" >
+      <if test="times != null">
         #{times,jdbcType=INTEGER},
       </if>
-      <if test="createDate != null" >
+      <if test="createDate != null">
         #{createDate,jdbcType=TIMESTAMP},
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.ScheduleJobLog" >
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.model.ScheduleJobLog">
     update schedule_job_log
-    <set >
-      <if test="jobID != null" >
+    <set>
+      <if test="jobID != null">
         JobID = #{jobID,jdbcType=VARCHAR},
       </if>
-      <if test="beanName != null" >
+      <if test="beanName != null">
         BeanName = #{beanName,jdbcType=VARCHAR},
       </if>
-      <if test="methodName != null" >
+      <if test="methodName != null">
         MethodName = #{methodName,jdbcType=VARCHAR},
       </if>
-      <if test="params != null" >
+      <if test="params != null">
         Params = #{params,jdbcType=VARCHAR},
       </if>
-      <if test="satus != null" >
+      <if test="satus != null">
         Satus = #{satus,jdbcType=TINYINT},
       </if>
-      <if test="error != null" >
+      <if test="error != null">
         Error = #{error,jdbcType=VARCHAR},
       </if>
-      <if test="times != null" >
+      <if test="times != null">
         Times = #{times,jdbcType=INTEGER},
       </if>
-      <if test="createDate != null" >
+      <if test="createDate != null">
         CreateDate = #{createDate,jdbcType=TIMESTAMP},
       </if>
     </set>
     where LogID = #{logID,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.ScheduleJobLog" >
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.model.ScheduleJobLog">
     update schedule_job_log
     set JobID = #{jobID,jdbcType=VARCHAR},
       BeanName = #{beanName,jdbcType=VARCHAR},

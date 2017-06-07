@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-  <mapper namespace="org.com.zrhx.log.org.com.zrhx.mapper.SysLogMapper">
-  <resultMap id="BaseResultMap" type="org.com.zrhx.log.org.com.zrhx.model.SysLog">
+  <mapper namespace="org.com.zrhx.log.mapper.SysLogMapper">
+  <resultMap id="BaseResultMap" type="org.com.zrhx.log.model.SysLog">
     <id column="LogID" jdbcType="VARCHAR" property="logID" />
     <result column="AppName" jdbcType="VARCHAR" property="appName" />
     <result column="LogType" jdbcType="INTEGER" property="logType" />
@@ -34,7 +34,7 @@
     delete from sys_log
     where LogID = #{logID,jdbcType=VARCHAR}
   </delete>
-  <insert id="insert" parameterType="org.com.zrhx.log.org.com.zrhx.model.SysLog">
+  <insert id="insert" parameterType="org.com.zrhx.log.model.SysLog">
     insert into sys_log (LogID, AppName, LogType, 
       UserID, operation, MethodName, 
       RequestMethod, RequestParams, RequestIp, 
@@ -48,7 +48,7 @@
       #{timeConsuming,jdbcType=BIGINT}, #{userAgent,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{modifyTime,jdbcType=TIMESTAMP})
   </insert>
-  <insert id="insertSelective" parameterType="org.com.zrhx.log.org.com.zrhx.model.SysLog">
+  <insert id="insertSelective" parameterType="org.com.zrhx.log.model.SysLog">
     insert into sys_log
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="logID != null">
@@ -151,7 +151,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.log.org.com.zrhx.model.SysLog">
+  <update id="updateByPrimaryKeySelective" parameterType="org.com.zrhx.log.model.SysLog">
     update sys_log
     <set>
       <if test="appName != null">
@@ -202,7 +202,7 @@
     </set>
     where LogID = #{logID,jdbcType=VARCHAR}
   </update>
-  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.log.org.com.zrhx.model.SysLog">
+  <update id="updateByPrimaryKey" parameterType="org.com.zrhx.log.model.SysLog">
     update sys_log
     set AppName = #{appName,jdbcType=VARCHAR},
       LogType = #{logType,jdbcType=INTEGER},
@@ -248,7 +248,7 @@
       #{item.LogID,jdbcType=VARCHAR}
     </foreach>
   </delete>
-  <select id="queryList" parameterType="org.com.zrhx.org.com.zrhx.model.SysDictionaryHeader" resultMap="BaseResultMap">
+  <select id="queryList" parameterType="org.com.zrhx.log.model.SysLog" resultMap="BaseResultMap">
     SELECT  *  FROM  sys_log
     <where>
       <if test="logType != null  and logType.trim() != ''">
@@ -265,7 +265,7 @@
     </choose>
 
   </select>
-  <select id="queryTotal" parameterType="org.com.zrhx.org.com.zrhx.model.SysDictionaryHeader" resultType="java.lang.String">
+  <select id="queryTotal" parameterType="org.com.zrhx.log.model.SysLog" resultType="java.lang.String">
     SELECT  COUNT(1)  FROM  sys_log
     <where>
       <if test="logType != null  and logType.trim() != ''">

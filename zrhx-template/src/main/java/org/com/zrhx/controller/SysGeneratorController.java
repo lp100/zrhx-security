@@ -31,6 +31,8 @@ import java.util.Map;
 @Controller
 @RequestMapping("/sys/generator")
 public class SysGeneratorController {
+
+
 	@Autowired
 	private SysGeneratorService sysGeneratorService;
 	
@@ -39,7 +41,7 @@ public class SysGeneratorController {
 	 */
 	@ResponseBody
 	@RequestMapping("/list")
-	@RequiresPermissions("sys:generator:list")
+//	@RequiresPermissions("sys:generator:list")
 	public R list(@RequestParam Map<String, Object> params){
 		//查询列表数据
 		Query query = new Query(params);
