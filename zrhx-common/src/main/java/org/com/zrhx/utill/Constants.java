@@ -26,6 +26,8 @@ public final class Constants {
 	public static final String USER_SESSION_KEY = "user_session";
 	// 超级管理员
 	public static final String ADMINISTRATOR_LOGINNAME = "admin";
+	// 超级管理员
+	public static final String ADMINISTRATOR_USERID = "1";
 	// 菜单
 	public static final String MENU_LIST = "menuList";
 	/****机构*****/
