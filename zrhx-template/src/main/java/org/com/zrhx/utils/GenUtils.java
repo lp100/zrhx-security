@@ -13,6 +13,7 @@ import org.com.zrhx.entity.ColumnEntity;
 import org.com.zrhx.entity.TableEntity;
 import org.com.zrhx.utill.DateUtils;
 import org.com.zrhx.utill.RRException;
+import org.com.zrhx.utill.ServiceUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,9 +47,10 @@ public class GenUtils {
 	
 	/**
 	 * 生成代码
+
 	 */
 	public static void generatorCode(Map<String, String> table,
-			List<Map<String, String>> columns, ZipOutputStream zip){
+			List<Map<String, String>> columns,String level, ZipOutputStream zip){
 		//配置信息
 		Configuration config = getConfig();
 		
@@ -95,9 +97,12 @@ public class GenUtils {
 		
 		//设置velocity资源加载器
 		Properties prop = new Properties();  
-		prop.put("file.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");  
+		prop.put("file.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
+		prop.put("runtime.log.logsystem.class", "org.apache.velocity.runtime.log.SimpleLog4JLogSystem");
+		prop.put("runtime.log.logsystem.log4j.category", "velocity");
+		prop.put("runtime.log.logsystem.log4j.logger", "velocity");
 		Velocity.init(prop);
-		
+		level ="base";
 		//封装模板数据
 		Map<String, Object> map = new HashMap<>();
 		map.put("tableName", tableEntity.getTableName());
@@ -111,6 +116,7 @@ public class GenUtils {
 		map.put("author", config.getString("author"));
 		map.put("email", config.getString("email"));
 		map.put("datetime", DateUtils.format(new Date(), DateUtils.DATE_TIME_PATTERN));
+		map.put("level",level);//二级包结构
         VelocityContext context = new VelocityContext(map);
         
         //获取模板列表
@@ -123,7 +129,7 @@ public class GenUtils {
 			
 			try {
 				//添加到zip
-				zip.putNextEntry(new ZipEntry(getFileName(template, tableEntity.getClassName(), config.getString("package"))));  
+				zip.putNextEntry(new ZipEntry(getFileName(template, tableEntity.getClassName(), config.getString("package"),level)));
 				IOUtils.write(sw.toString(), zip, "UTF-8");
 				IOUtils.closeQuietly(sw);
 				zip.closeEntry();
@@ -171,42 +177,51 @@ public class GenUtils {
 	/**
 	 * 获取文件名
 	 */
-	public static String getFileName(String template, String className, String packageName){
+	public static String getFileName(String template, String className, String packageName,String levelPackageName){
 		String packagePath = "main" + File.separator + "java" + File.separator;
 		if(StringUtils.isNotBlank(packageName)){
 			packagePath += packageName.replace(".", File.separator) + File.separator;
 		}
-		
+		if (!StringUtils.isEmpty(levelPackageName)){
+			packagePath += levelPackageName + File.separator;
+		}
 		if(template.contains("Entity.java.vm")){
-			return packagePath + "org.com.zrhx.model" + File.separator + className + ".java";
+			return packagePath + "model" + File.separator + className + ".java";
 		}
 		
 		if(template.contains("Dao.java.vm")){
-			return packagePath + "org.com.zrhx.mapper" + File.separator + className + "Mapper.java";
+			return packagePath + "mapper" + File.separator + className + "Mapper.java";
 		}
 		
 		if(template.contains("Dao.xml.vm")){
-			return packagePath + "org.com.zrhx.mapper" + File.separator + className + "Mapper.xml";
+			return packagePath + "mapper" + File.separator + className + "Mapper.xml";
 		}
 		
 		if(template.contains("Service.java.vm")){
-			return packagePath + "org.com.zrhx.service" + File.separator + className + "Service.java";
+			return packagePath + "service" + File.separator + className + "Service.java";
 		}
 		
 		if(template.contains("ServiceImpl.java.vm")){
-			return packagePath + "org.com.zrhx.service" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
+			return packagePath + "service" + File.separator + "impl" + File.separator + className + "ServiceImpl.java";
 		}
 		
 		if(template.contains("Controller.java.vm")){
-			return packagePath + "org.com.zrhx.controller" + File.separator + className + "Controller.java";
+			return packagePath + "controller" + File.separator + className + "Controller.java";
 		}
 		
 		if(template.contains("list.html.vm")){
+			if (!StringUtils.isEmpty(levelPackageName)){
+				return "main" + File.separator + "webapp" + File.separator + "WEB-INF" + File.separator + "page"
+						+ File.separator +levelPackageName+ File.separator + className.toLowerCase() + ".html";
+			}
 			return "main" + File.separator + "webapp" + File.separator + "WEB-INF" + File.separator + "page"
 					+ File.separator + "generator" + File.separator + className.toLowerCase() + ".html";
 		}
 		
 		if(template.contains("list.js.vm")){
+			if (!StringUtils.isEmpty(levelPackageName)){
+				return "main" + File.separator + "webapp" + File.separator + "js" + File.separator + levelPackageName + File.separator + className.toLowerCase() + ".js";
+			}
 			return "main" + File.separator + "webapp" + File.separator + "js" + File.separator + "generator" + File.separator + className.toLowerCase() + ".js";
 		}
 

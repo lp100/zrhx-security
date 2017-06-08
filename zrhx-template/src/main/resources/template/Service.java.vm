@@ -1,7 +1,11 @@
+#if($level)
+package ${package}.${levelpackage}service;
+import ${package}.${levelpackage}model.${className};
+import ${package}.service.BaseService;
+#else
 package ${package}.service;
-
 import ${package}.model.${className};
-
+#end
 import java.util.List;
 import java.util.Map;
 

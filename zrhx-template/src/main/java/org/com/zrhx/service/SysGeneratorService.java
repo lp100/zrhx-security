@@ -22,6 +22,7 @@ public interface SysGeneratorService {
 	
 	/**
 	 * 生成代码
+	 *  * @param  level 二级包结构
 	 */
-	byte[] generatorCode(String[] tableNames);
+	byte[] generatorCode(String[] tableNames,String level);
 }

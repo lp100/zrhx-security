@@ -1,15 +1,22 @@
-package ${package}.service.impl;
+#if($level)
+    #set($levelpackage=${level}+".")
+#else
+    #set($levelpackage="")
+#end
+package ${package}.${levelpackage}service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
-import ${package}.mapper.${className}Mapper;
+import ${package}.${levelpackage}mapper.${className}Mapper;
+import ${package}.${levelpackage}model.${className};
 import ${package}.model.${className};
-import ${package}.service.BaseServiceImpl;
-import ${package}.model.${className};
-import ${package}.service.${className}Service;
+#if($!level)
+import ${package}.service.impl.BaseServiceImpl;
+#end
+import ${package}.${levelpackage}service.${className}Service;
 
 
 

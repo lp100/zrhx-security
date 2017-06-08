@@ -41,15 +41,15 @@ public class SysGeneratorController {
 	 */
 	@ResponseBody
 	@RequestMapping("/list")
-//	@RequiresPermissions("sys:generator:list")
+	@RequiresPermissions("sys:generator:list")
 	public R list(@RequestParam Map<String, Object> params){
 		//查询列表数据
 		Query query = new Query(params);
 		List<Map<String, Object>> list = sysGeneratorService.queryList(query);
 		int total = sysGeneratorService.queryTotal(query);
-		
+
 		PageUtils pageUtil = new PageUtils(list, total, query.getLimit(), query.getPage());
-		
+
 		return R.ok().put("page", pageUtil);
 	}
 	
@@ -63,9 +63,10 @@ public class SysGeneratorController {
 		//获取表名，不进行xss过滤
 		HttpServletRequest orgRequest = XssHttpServletRequestWrapper.getOrgRequest(request);
 		String tables = orgRequest.getParameter("tables");
+		String packAge = orgRequest.getParameter("package");
 		tableNames = JSON.parseArray(tables).toArray(tableNames);
 		
-		byte[] data = sysGeneratorService.generatorCode(tableNames);
+		byte[] data = sysGeneratorService.generatorCode(tableNames,packAge);
 		
 		response.reset();  
         response.setHeader("Content-Disposition", "attachment; filename=\"template.zip\"");

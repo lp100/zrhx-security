@@ -48,7 +48,11 @@ $header
 		</form>
 	</div>
 </div>
-
+#if($level)
 <script src="${rc.contextPath}/js/generator/${pathName}.js?_${date.systemTime}"></script>
+#else
+<script src="${rc.contextPath}/js/${level}/${pathName}.js?_${date.systemTime}"></script>
+#end
+
 </body>
 </html>

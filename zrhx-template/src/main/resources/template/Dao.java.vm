@@ -1,6 +1,11 @@
-package ${package}.mapper;
+#if($level)
+    #set($levelpackage=${level}+".")
+#else
+    #set($levelpackage="")
+#end
+package ${package}.${levelpackage}mapper;
 
-import ${package}.model.${className};
+import ${package}.${levelpackage}model.${className};
 
 /**
  * ${comments}
