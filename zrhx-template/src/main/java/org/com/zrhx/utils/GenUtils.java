@@ -12,6 +12,7 @@ import org.apache.velocity.app.Velocity;
 import org.com.zrhx.entity.ColumnEntity;
 import org.com.zrhx.entity.TableEntity;
 import org.com.zrhx.utill.DateUtils;
+import org.com.zrhx.utill.IdGen;
 import org.com.zrhx.utill.RRException;
 import org.com.zrhx.utill.ServiceUtil;
 
@@ -116,7 +117,13 @@ public class GenUtils {
 		map.put("author", config.getString("author"));
 		map.put("email", config.getString("email"));
 		map.put("datetime", DateUtils.format(new Date(), DateUtils.DATE_TIME_PATTERN));
-		map.put("level",level);//二级包结构
+		map.put("keyid_1", IdGen.uuid());
+		map.put("keyid_2", IdGen.uuid());
+		map.put("keyid_3", IdGen.uuid());
+		map.put("keyid_4", IdGen.uuid());
+		map.put("keyid_5", IdGen.uuid());
+		map.put("keyid_6", IdGen.uuid());
+
         VelocityContext context = new VelocityContext(map);
         
         //获取模板列表

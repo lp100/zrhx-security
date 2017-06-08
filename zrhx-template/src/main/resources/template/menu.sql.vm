@@ -18,12 +18,12 @@ INSERT INTO `sys_menu` (`parent_id`, `name`, `url`, `perms`, `type`, `icon`, `or
 
 
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`,`PermissionCode`, `PermissionName`, `url`, `Description`, `Memo`, `PermissionSN`)
-VALUES ('6', '1', '${className}Manager','${comments}', 'sys/${pathName}.html', NULL, NULL , 6);
+VALUES ('${keyid_1}', '1', '${className}Manager','${comments}', 'sys/${pathName}.html', NULL, NULL , 6);
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`)
- VALUES ('7', '6', 'scheduleSelect','查看', NULL, 'sys:schedule:list,sys:schedule:info', '2', NULL, '0');
+ VALUES ('${keyid_2}', '${keyid_1}', '${className}Select','查看', NULL, '${pathName}:list,${pathName}:info', '2', NULL, 0);
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`)
- VALUES ('8', '6', 'scheduleAdd','新增', NULL, 'sys:schedule:save', '2', NULL, '0');
+ VALUES ('${keyid_3}', '${keyid_1}', '${className}Add','新增', NULL, '${pathName}:save', '2', NULL, 0);
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`,`PermissionCode`, `PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`)
- VALUES ('9', '6', 'scheduleUpdate','修改', NULL, 'sys:schedule:update', '2', NULL, '0');
+ VALUES ('${keyid_4}', '${keyid_1}', '${className}Update','修改', NULL, '${pathName}:update', '2', NULL, 0);
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`)
- VALUES ('10', '6', 'scheduleDelete','删除', NULL, 'sys:schedule:delete', '2', NULL, '0');
+ VALUES ('${keyid_5}', '${keyid_1}', '${className}Delete','删除', NULL, '${pathName}:delete', '2', NULL, 0);
