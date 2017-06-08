@@ -1,7 +1,7 @@
 #if($level)
 	#set($levelpackage=${level}+".")
-	#else
-		#set($levelpackage="")
+#else
+#set($levelpackage="")
 #end
 package ${package}.${levelpackage}controller;
 
