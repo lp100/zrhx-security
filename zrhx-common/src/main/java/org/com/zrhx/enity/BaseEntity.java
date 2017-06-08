@@ -50,14 +50,6 @@ public abstract class BaseEntity<T> implements Serializable {
 		this.memo = memo;
 	}
 
-	public void setLimit(Integer limit) {
-		this.limit = limit;
-	}
-
-	public void setStart(Integer start) {
-		this.start = start;
-	}
-
 	public String getCreateBy() {
 		return createBy;
 	}
@@ -90,19 +82,43 @@ public abstract class BaseEntity<T> implements Serializable {
 		this.updateDate = updateDate;
 	}
 
-	public int getLimit() {
+	public String getEnabledFlag() {
+		return enabledFlag;
+	}
+
+	public void setEnabledFlag(String enabledFlag) {
+		this.enabledFlag = enabledFlag;
+	}
+
+	public String getSidx() {
+		return sidx;
+	}
+
+	public void setSidx(String sidx) {
+		this.sidx = sidx;
+	}
+
+	public String getOrder() {
+		return order;
+	}
+
+	public void setOrder(String order) {
+		this.order = order;
+	}
+
+	public Integer getLimit() {
 		return limit;
 	}
 
-	public void setLimit(int limit) {
+	public void setLimit(Integer limit) {
 		this.limit = limit;
 	}
 
-	public int getStart() {
+	public Integer getStart() {
 		return start;
 	}
 
-	public void setStart(int start) {
+	public void setStart(Integer start) {
 		this.start = start;
 	}
 
@@ -126,31 +142,7 @@ public abstract class BaseEntity<T> implements Serializable {
 		return list;
 	}
 
-	public String getEnabledFlag() {
-		return enabledFlag;
-	}
-
-	public void setEnabledFlag(String enabledFlag) {
-		this.enabledFlag = enabledFlag;
-	}
-
 	public void setList(List<String> list) {
 		this.list = list;
-
-	}
-	public String getSidx() {
-		return sidx;
-	}
-
-	public void setSidx(String sidx) {
-		this.sidx = sidx;
-	}
-
-	public String getOrder() {
-		return order;
-	}
-
-	public void setOrder(String order) {
-		this.order = order;
 	}
 }

@@ -2,7 +2,6 @@ package org.com.zrhx.service.impl;
 
 import org.com.zrhx.mapper.ScheduleJobConfigMapper;
 import org.com.zrhx.model.ScheduleJobConfig;
-import org.com.zrhx.service.Impl.BaseServiceImpl;
 import org.com.zrhx.service.ScheduleJobService;
 import org.com.zrhx.utill.Constants;
 import org.quartz.CronTrigger;
@@ -14,9 +13,7 @@ import org.com.zrhx.utils.ScheduleUtils;
 
 import javax.annotation.PostConstruct;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Service("scheduleJobService")
 public class ScheduleJobServiceImpl extends BaseServiceImpl<ScheduleJobConfig,ScheduleJobConfigMapper> implements ScheduleJobService {

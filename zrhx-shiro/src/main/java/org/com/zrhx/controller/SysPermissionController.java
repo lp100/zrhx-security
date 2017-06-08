@@ -1,5 +1,6 @@
 package org.com.zrhx.controller;
 
+import com.github.pagehelper.PageInfo;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.com.zrhx.model.SysPermission;
 import org.com.zrhx.service.impl.SysPermissionServiceImpl;
@@ -29,16 +30,19 @@ public class SysPermissionController extends BaseController<SysPermissionControl
 	 */
 	@RequestMapping("/list")
 	@RequiresPermissions("sys:menu:list")
-	public R list(@RequestParam Map<String, Object> params) {
-//		//查询列表数据
+	public R list(@RequestParam(value = "page", defaultValue = "1") Integer page,@RequestParam(value = "rows", defaultValue = "10") Integer rows,SysPermission params){
+		//查询列表数据
 //		Query query = new Query(params);
-//		List<SysMenuEntity> menuList = sysMenuService.queryList(query);
-//		int total = sysMenuService.queryTotal(query);
+//		List<ScheduleJobEntity> jobList = scheduleJobService.queryList(query);
+//		int total = scheduleJobService.queryTotal(query);
 //
-//		PageUtils pageUtil = new PageUtils(menuList, total, query.getLimit(), query.getPage());
+//		PageUtils pageUtil = new PageUtils(jobList, total, query.getLimit(), query.getPage());
 //
-		return R.ok();
+//		return R.ok().put("page", pageUtil);
+		PageInfo<SysPermission> pageInfo = sysPermissionService.findPageListByWhere(page,rows,params);
+		return R.page(pageInfo.getSize(),pageInfo.getList());
 	}
+
 
 
 	/**

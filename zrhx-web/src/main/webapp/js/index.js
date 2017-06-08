@@ -4,15 +4,15 @@ var menuItem = Vue.extend({
 	props:{item:{}},
 	template:[
 	          '<li>',
-	          '<a v-if="item.type === 0" href="javascript:;">',
-	          '<i v-if="item.icon != null" :class="item.icon"></i>',
-	          '<span>{{item.name}}</span>',
+	          '<a v-if="item.permissionType === 0" href="javascript:;">',
+	          '<i v-if="item.permissionCode != null" :class="item.icon"></i>',
+	          '<span>{{item.permissionName}}</span>',
 	          '<i class="fa fa-angle-left pull-right"></i>',
 	          '</a>',
-	          '<ul v-if="item.type === 0" class="treeview-menu">',
+	          '<ul v-if="item.permissionType === 0" class="treeview-menu">',
 	          '<menu-item :item="item" v-for="item in item.list"></menu-item>',
 	          '</ul>',
-	          '<a v-if="item.type === 1" :href="\'#\'+item.url"><i v-if="item.icon != null" :class="item.icon"></i><i v-else class="fa fa-circle-o"></i> {{item.name}}</a>',
+	          '<a v-if="item.permissionType === 1" :href="\'#\'+item.url"><i v-if="item.permissionCode != null" :class="item.icon"></i><i v-else class="fa fa-circle-o"></i> {{item.permissionName}}</a>',
 	          '</li>'
 	].join('')
 });
@@ -34,7 +34,7 @@ var vm = new Vue({
 	data:{
 		user:{},
 		menuList:{},
-		main:"sys/main.html",
+		main:"main.html",
 		password:'',
 		newPassword:'',
         navTitle:"控制台"
@@ -46,9 +46,9 @@ var vm = new Vue({
 			});
 		},
 		getUser: function(){
-			$.getJSON("sys/user/info?_"+$.now(), function(r){
-				vm.user = r.user;
-			});
+			// $.getJSON("sys/user/info?_"+$.now(), function(r){
+			// 	vm.user = r.user;
+			// });
 		},
 		updatePassword: function(){
 			layer.open({

@@ -2,7 +2,6 @@ package org.com.zrhx.service.impl;
 
 import org.com.zrhx.mapper.SysUserMapper;
 import org.com.zrhx.model.SysUser;
-import org.com.zrhx.service.Impl.BaseServiceImpl;
 import org.com.zrhx.service.SysUserService;
 import org.springframework.stereotype.Service;
 

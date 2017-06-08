@@ -1,4 +1,4 @@
-package org.com.zrhx.service.Impl;
+package org.com.zrhx.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;

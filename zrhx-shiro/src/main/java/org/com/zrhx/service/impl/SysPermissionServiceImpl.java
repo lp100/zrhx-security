@@ -2,10 +2,8 @@ package org.com.zrhx.service.impl;
 
 import org.com.zrhx.mapper.SysPermissionMapper;
 import org.com.zrhx.model.SysPermission;
-import org.com.zrhx.service.Impl.BaseServiceImpl;
 import org.com.zrhx.service.SysPermissionService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**

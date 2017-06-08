@@ -2,7 +2,7 @@ package org.com.zrhx.log.service;
 
 import org.com.zrhx.log.mapper.SysLogMapper;
 import org.com.zrhx.log.model.SysLog;
-import org.com.zrhx.service.Impl.BaseServiceImpl;
+import org.com.zrhx.service.impl.BaseServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
