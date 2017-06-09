@@ -8,11 +8,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * 查询参数
- *
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2017-03-14 23:15
+ * @Title: QueryUtil
+ * @Description: 查询参数
+ * @author: gs
+ * @date: 2017/6/9 8:56
  */
 public class QueryUtil<T extends BaseEntity>  {
 
