@@ -26,7 +26,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="zrhx-common" />
+    <orderEntry type="library" name="Maven: org.apkinfo.api:AXmlResourceParser:1.1.1" level="project" />
     <orderEntry type="module" module-name="zrhx-schedule" />
+    <orderEntry type="library" name="Maven: org.quartz-scheduler:quartz:2.2.3" level="project" />
     <orderEntry type="module" module-name="zrhx-shiro" />
     <orderEntry type="module" module-name="zrhx-template" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
