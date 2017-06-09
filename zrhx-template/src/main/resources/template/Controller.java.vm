@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+import org.com.zrhx.annotation.SysLogAnnotation;
 import ${package}.${levelpackage}model.${className};
 import ${package}.${levelpackage}service.${className}Service;
 import ${package}.utils.PageUtils;
@@ -71,6 +71,7 @@ public class ${className}Controller {
 	/**
 	 * 保存
 	 */
+    @SysLogAnnotation("保存${comments}")
 	@RequestMapping("/save")
 	@RequiresPermissions("${pathName}:save")
 	public R save(@RequestBody ${className} ${classname}){
@@ -82,6 +83,7 @@ public class ${className}Controller {
 	/**
 	 * 修改
 	 */
+    @SysLogAnnotation("修改${comments}")
 	@RequestMapping("/update")
 	@RequiresPermissions("${pathName}:update")
 	public R update(@RequestBody ${className} ${classname}){
@@ -93,6 +95,7 @@ public class ${className}Controller {
 	/**
 	 * 删除
 	 */
+    @SysLogAnnotation("删除${comments}")
 	@RequestMapping("/delete")
 	@RequiresPermissions("${pathName}:delete")
 	public R delete(@RequestBody ${pk.attrType}[] ${pk.attrname}s){
