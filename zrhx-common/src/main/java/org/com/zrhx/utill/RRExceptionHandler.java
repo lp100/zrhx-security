@@ -26,6 +26,10 @@ public class RRExceptionHandler implements HandlerExceptionResolver {
 	@Override
 	public ModelAndView resolveException(HttpServletRequest request,
                                          HttpServletResponse response, Object handler, Exception ex) {
+		if (null != request.getHeader("X-Requested-With") &&
+				request.getHeader("X-Requested-With").equalsIgnoreCase("XMLHttpRequest")) {
+		    //说明该请求为异步请求
+		}
 		R r = new R();
 		try {
 			response.setContentType("application/json;charset=utf-8");
