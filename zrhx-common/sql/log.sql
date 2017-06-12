@@ -65,7 +65,7 @@ CREATE TABLE `sys_dictionary_header` (
   `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
   `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`HeaderCode`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统配置';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='字典配置';
 
 -- ----------------------------
 -- Table structure for sys_dictionary_line
@@ -85,7 +85,7 @@ CREATE TABLE `sys_dictionary_line` (
   `UpdateBy` varchar(32) DEFAULT NULL COMMENT '修改人',
   `UpdateDate` datetime DEFAULT NULL COMMENT '修改时间',
   PRIMARY KEY (`LineID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统子配置';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='字典行配置';
 
 -- ----------------------------
 -- Table structure for sys_permission
