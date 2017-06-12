@@ -168,8 +168,6 @@
       DefaultFlag = #{defaultFlag,jdbcType=VARCHAR},
       Memo = #{memo,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
-   /*   CreateBy = #{createBy,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},*/
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where LineID = #{lineID,jdbcType=VARCHAR}
@@ -223,4 +221,13 @@
       </if>
     </where>
   </select>
+
+  <update id="updateBatchFlag"  parameterType="org.com.zrhx.model.SysDictionaryLine">
+    UPDATE   sys_dictionary_line
+    SET  EnabledFlag = #{enabledFlag}
+    where LineID IN
+    <foreach collection="list" item="item" close=")" separator="," open="(">
+      #{item}
+    </foreach>
+  </update>
 </mapper>

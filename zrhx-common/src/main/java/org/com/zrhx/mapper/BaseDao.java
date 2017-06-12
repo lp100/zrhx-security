@@ -62,6 +62,12 @@ public interface BaseDao<T> {
 	int deleteBatch(List<T> list);
 
 	/**
+	 *
+	 * @param record
+	 * @return 批量修改可用状态
+	 */
+	int updateBatchFlag(T record);
+	/**
 	 * 批量保存，返回保存的条数
 	 * @param list
 	 * @return

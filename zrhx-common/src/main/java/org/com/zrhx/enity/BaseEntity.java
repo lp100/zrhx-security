@@ -40,7 +40,8 @@ public abstract class BaseEntity<T> implements Serializable {
 
 	private Date endtime;
 
-	private List<String> list;
+
+	private List list;
 
 	public String getMemo() {
 		return memo;
@@ -138,11 +139,11 @@ public abstract class BaseEntity<T> implements Serializable {
 		this.endtime = endtime;
 	}
 
-	public List<String> getList() {
+	public List getList() {
 		return list;
 	}
 
-	public void setList(List<String> list) {
+	public void setList(List list) {
 		this.list = list;
 	}
 }

@@ -127,6 +127,15 @@
         </foreach>
     </delete>
 
+    <update id="updateBatchFlag"  parameterType="${package}.${levelpackage}model.${className}">
+        UPDATE   ${tableName}
+        SET  EnabledFlag = #{enabledFlag}
+        where ${pk.columnName} IN
+        <foreach collection="list" item="item" close=")" separator="," open="(">
+            #{item}
+        </foreach>
+    </update>
+
     <select id="queryList" parameterType="${package}.${levelpackage}model.${className}" resultMap="${classname}Map">
         SELECT  *  FROM   ${tableName}
         WHERE   AND EnabledFlag='0'

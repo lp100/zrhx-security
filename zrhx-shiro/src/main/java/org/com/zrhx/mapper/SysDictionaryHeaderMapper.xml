@@ -134,8 +134,6 @@
       DictionaryType = #{dictionaryType,jdbcType=VARCHAR},
       Memo = #{memo,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
---       CreateBy = #{createBy,jdbcType=VARCHAR},
---       CreateDate = #{createDate,jdbcType=TIMESTAMP},
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where HeaderCode = #{headerCode,jdbcType=VARCHAR}
@@ -193,4 +191,13 @@
       </if>
     </where>
   </select>
+
+  <update id="updateBatchFlag"  parameterType="org.com.zrhx.model.SysDictionaryHeader">
+    UPDATE   sys_dictionary_header
+    SET  EnabledFlag = #{enabledFlag}
+    where HeaderCode IN
+    <foreach collection="list" item="item" close=")" separator="," open="(">
+      #{item}
+    </foreach>
+  </update>
 </mapper>

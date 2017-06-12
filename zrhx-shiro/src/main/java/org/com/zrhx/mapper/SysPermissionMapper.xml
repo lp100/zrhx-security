@@ -190,8 +190,6 @@
       PermissionType = #{permissionType,jdbcType=VARCHAR},
       Memo = #{memo,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
-   /*   CreateBy = #{createBy,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},*/
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where PermissionID = #{permissionID,jdbcType=VARCHAR}
@@ -215,7 +213,7 @@
 
   <delete id="deleteBatch" parameterType="java.util.List">
     delete from sys_permission
-    where LineID IN
+    where PermissionID IN
     <foreach close=")" collection="list" item="item" open="(" separator=",">
       #{item.permissionID,jdbcType=VARCHAR}
     </foreach>
@@ -276,4 +274,13 @@
 		where sur.UserID =  #{userId}
 		order by PermissionSN,sp.PermissionID
   </select>
+
+  <update id="updateBatchFlag"  parameterType="org.com.zrhx.model.SysPermission">
+    UPDATE   sys_permission
+    SET  EnabledFlag = #{enabledFlag}
+    where PermissionID IN
+    <foreach collection="list" item="item" close=")" separator="," open="(">
+      #{item}
+    </foreach>
+  </update>
 </mapper>

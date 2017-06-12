@@ -49,7 +49,7 @@ public interface   BaseService<T extends BaseEntity<T>> {
      * @param selectiveFlag ( 选择性)
      * @return
      */
-    public Integer insert(T record,boolean selectiveFlag);
+    public boolean insert(T record,boolean selectiveFlag);
 
 
     /**
@@ -59,7 +59,7 @@ public interface   BaseService<T extends BaseEntity<T>> {
      * @param selectiveFlag ( 选择性  为true时 修改数据，使用不为null的字段)
      * @return
      */
-    public Integer update(T record ,boolean selectiveFlag);
+    public boolean update(T record ,boolean selectiveFlag);
 
     /**
      * 根据id删除数据
@@ -67,16 +67,22 @@ public interface   BaseService<T extends BaseEntity<T>> {
      * @param id
      * @return
      */
-    public Integer deleteById(Object id);
+    public boolean deleteById(Object id);
 
     /**
      * 批量删除
      * @param ids
      * @return
      */
-    public Integer deleteByIds( List<T> ids);
+    public boolean deleteByIds( List<T> ids);
 
-
+    /**
+     *  批量修改可用状态
+     * @param ids 记录id
+     * @param enabledFlag
+     * @return
+     */
+   public boolean updateBatchFlag(T t,List ids, String enabledFlag);
 
 
 }

@@ -15,7 +15,11 @@
 
 	<context:component-scan base-package="org.com.zrhx" />
 	<context:annotation-config />
+	<!--在springMVC-servlet.xml中配置<mvc:default-servlet-handler />后，会在Spring MVC上下文中定义一个org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler，
+	它会像一个检查员，对进入DispatcherServlet的URL进行筛查，如果发现是静态资源的请求，
+	就将该请求转由Web应用服务器默认的Servlet处理，如果不是静态资源的请求，才由DispatcherServlet继续处理。-->
 	<mvc:default-servlet-handler />
+	<!--通过配置织入@Aspectj切面-->
 	<aop:aspectj-autoproxy proxy-target-class="true" />
 	<mvc:annotation-driven>
 		<mvc:message-converters register-defaults="true">
@@ -66,6 +70,7 @@
     <bean id="viewResolverJsp" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<!--前缀-->
         <property name="prefix" value="/WEB-INF/page/"/>
+		<!--要解析的类型-->
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="viewNames" value="*.jsp" />
         <property name="suffix" value=""/>

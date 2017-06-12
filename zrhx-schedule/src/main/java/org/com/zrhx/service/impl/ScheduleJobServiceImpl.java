@@ -40,32 +40,32 @@ public class ScheduleJobServiceImpl extends BaseServiceImpl<ScheduleJobConfig,Sc
 
 	@Override
 	@Transactional(readOnly = false)
-	public Integer insert(ScheduleJobConfig scheduleJob,boolean selectiveFlag) {
+	public boolean insert(ScheduleJobConfig scheduleJob,boolean selectiveFlag) {
 		scheduleJob.setCreateDate(new Date());
 		scheduleJob.setStatus(Constants.ScheduleStatus.NORMAL.getValue());
 		int i = mapper.insert(scheduleJob);
 		if (i>0){
 			ScheduleUtils.createScheduleJob(scheduler, scheduleJob);
 		}
-        return  i;
+        return  returnResult(i);
 
     }
 
 	@Override
 	@Transactional(readOnly = false)
-	public Integer update(ScheduleJobConfig scheduleJob,boolean selectiveFlag) {
+	public boolean update(ScheduleJobConfig scheduleJob,boolean selectiveFlag) {
 
 		scheduleJob.setUpdateDate(new Date());
 		int i = mapper.updateByPrimaryKey(scheduleJob);
 		if (i>0){
 			ScheduleUtils.updateScheduleJob(scheduler, scheduleJob);
 		}
-		return  i;
+		return   returnResult(i);
 	}
 
 	@Override
 	@Transactional(readOnly = false)
-	public Integer deleteByIds(List<ScheduleJobConfig> jobIds) {
+	public boolean deleteByIds(List<ScheduleJobConfig> jobIds) {
     	//删除数据
 		int i = mapper.deleteBatch(jobIds);
 		if (i>0){
@@ -73,7 +73,7 @@ public class ScheduleJobServiceImpl extends BaseServiceImpl<ScheduleJobConfig,Sc
 				ScheduleUtils.deleteScheduleJob(scheduler, jobId.getJobID());
 			}
 		}
-		return i;
+		return  returnResult(i);
 	}
 
 	@Override

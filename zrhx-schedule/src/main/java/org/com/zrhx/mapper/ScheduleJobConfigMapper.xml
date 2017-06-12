@@ -219,9 +219,19 @@
 
   <!-- 批量更新状态 -->
   <update id="updateBatchStatus" parameterType="org.com.zrhx.model.ScheduleJobConfig">
-    update schedule_job set status = #{status} where job_id in
+    update schedule_job set status = #{status} where JobID in
     <foreach close=")" collection="list" item="jobId" open="(" separator=",">
       #{jobId}
     </foreach>
   </update>
+
+  <delete id="updateBatchFlag"  parameterType="org.com.zrhx.model.ScheduleJobConfig">
+    UPDATE   schedule_job
+    SET  EnabledFlag = #{enabledFlag}
+    where JobID IN
+    <foreach collection="list" item="item" close=")" separator="," open="(">
+      #{item}
+    </foreach>
+  </delete>
+
 </mapper>

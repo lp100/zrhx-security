@@ -155,8 +155,6 @@
       LoginIP = #{loginIP,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
       UserName = #{userName,jdbcType=VARCHAR},
-    /*  CreateBy = #{createBy,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},*/
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where UserID = #{userID,jdbcType=VARCHAR}
@@ -242,4 +240,13 @@
   <select id="findByLoginName" parameterType="java.lang.String"  resultMap="BaseResultMap">
     select * from sys_user where LoginName = #{loginName} AND EnabledFlag='0'
   </select>
+
+  <update id="updateBatchFlag"  parameterType="org.com.zrhx.model.SysUser">
+    UPDATE   sys_user
+    SET  EnabledFlag = #{enabledFlag}
+    where UserID IN
+    <foreach collection="list" item="item" close=")" separator="," open="(">
+      #{item}
+    </foreach>
+  </update>
 </mapper>
