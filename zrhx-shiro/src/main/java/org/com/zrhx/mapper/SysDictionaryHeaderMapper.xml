@@ -113,12 +113,12 @@
       <if test="enabledFlag != null">
         EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
       </if>
-      <if test="createBy != null">
+      <!--<if test="createBy != null">
         CreateBy = #{createBy,jdbcType=VARCHAR},
       </if>
       <if test="createDate != null">
         CreateDate = #{createDate,jdbcType=TIMESTAMP},
-      </if>
+      </if>-->
       <if test="updateBy != null">
         UpdateBy = #{updateBy,jdbcType=VARCHAR},
       </if>
@@ -134,8 +134,8 @@
       DictionaryType = #{dictionaryType,jdbcType=VARCHAR},
       Memo = #{memo,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
-      CreateBy = #{createBy,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+--       CreateBy = #{createBy,jdbcType=VARCHAR},
+--       CreateDate = #{createDate,jdbcType=TIMESTAMP},
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where HeaderCode = #{headerCode,jdbcType=VARCHAR}

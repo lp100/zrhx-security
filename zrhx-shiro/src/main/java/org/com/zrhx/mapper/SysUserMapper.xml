@@ -132,12 +132,12 @@
       <if test="userName != null">
         UserName = #{userName,jdbcType=VARCHAR},
       </if>
-      <if test="createBy != null">
+     <!-- <if test="createBy != null">
         CreateBy = #{createBy,jdbcType=VARCHAR},
       </if>
       <if test="createDate != null">
         CreateDate = #{createDate,jdbcType=TIMESTAMP},
-      </if>
+      </if>-->
       <if test="updateBy != null">
         UpdateBy = #{updateBy,jdbcType=VARCHAR},
       </if>
@@ -155,8 +155,8 @@
       LoginIP = #{loginIP,jdbcType=VARCHAR},
       EnabledFlag = #{enabledFlag,jdbcType=VARCHAR},
       UserName = #{userName,jdbcType=VARCHAR},
-      CreateBy = #{createBy,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},
+    /*  CreateBy = #{createBy,jdbcType=VARCHAR},
+      CreateDate = #{createDate,jdbcType=TIMESTAMP},*/
       UpdateBy = #{updateBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP}
     where UserID = #{userID,jdbcType=VARCHAR}
