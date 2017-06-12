@@ -12,11 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 定时任务日志
- * 
- * @author chenshun
- * @email sunlightcs@gmail.com
- * @date 2016年12月1日 下午10:39:52
+ * @Title: ScheduleJobLogController
+ * @Description: 定时任务日志
+ * @author: gs
+ * @date: 2017/6/12 9:27
  */
 @RestController
 @RequestMapping("/sys/scheduleLog")
@@ -31,26 +30,8 @@ public class ScheduleJobLogController {
 	@RequiresPermissions("sys:schedule:log")
 	public R list(@RequestParam(value = "page", defaultValue = "1") Integer page,@RequestParam(value = "rows", defaultValue = "10") Integer rows, ScheduleJobLog
 			params) {
-//		//查询列表数据
-//		Query query = new Query(params);
-//		List<ScheduleJobLog> jobList = scheduleJobLogService.queryList(query);
-//		int total = scheduleJobLogService.queryTotal(query);
-//
-//		PageUtils pageUtil = new PageUtils(jobList, total, query.getLimit(), query.getPage());
-//
-//		return R.ok().put("page", pageUtil);
-//	}
-
-		//查询列表数据
-//		Query query = new Query(params);
-//		List<ScheduleJobEntity> jobList = scheduleJobService.queryList(query);
-//		int total = scheduleJobService.queryTotal(query);
-//
-//		PageUtils pageUtil = new PageUtils(jobList, total, query.getLimit(), query.getPage());
-//
-//		return R.ok().put("page", pageUtil);
 		PageInfo<ScheduleJobLog> pageInfo = scheduleJobLogService.findPageListByWhere(page, rows, params);
-		return R.ok().put("page", pageInfo);
+		return R.page(pageInfo.getSize(),pageInfo.getList());
 	}
 	/**
 	 * 定时任务日志信息

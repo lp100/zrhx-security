@@ -28,14 +28,6 @@ public class ScheduleJobController extends BaseController<ScheduleJobController>
 	@RequestMapping("/list")
 	@RequiresPermissions("sys:schedule:list")
 	public R list(@RequestParam(value = "page", defaultValue = "1") Integer page,@RequestParam(value = "rows", defaultValue = "10") Integer rows,ScheduleJobConfig params){
-		//查询列表数据
-//		Query query = new Query(params);
-//		List<ScheduleJobEntity> jobList = scheduleJobService.queryList(query);
-//		int total = scheduleJobService.queryTotal(query);
-//
-//		PageUtils pageUtil = new PageUtils(jobList, total, query.getLimit(), query.getPage());
-//
-//		return R.ok().put("page", pageUtil);
 		PageInfo<ScheduleJobConfig> pageInfo = scheduleJobService.findPageListByWhere(page,rows,params);
 		return R.page(pageInfo.getSize(),pageInfo.getList());
 	}
