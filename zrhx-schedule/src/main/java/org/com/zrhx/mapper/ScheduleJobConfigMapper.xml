@@ -132,12 +132,12 @@
       <if test="memo != null">
         Memo = #{memo,jdbcType=VARCHAR},
       </if>
-      <if test="createDate != null">
-        CreateDate = #{createDate,jdbcType=TIMESTAMP},
-      </if>
-      <if test="createBy != null">
-        CreateBy = #{createBy,jdbcType=VARCHAR},
-      </if>
+      <!--<if test="createDate != null">-->
+        <!--CreateDate = #{createDate,jdbcType=TIMESTAMP},-->
+      <!--</if>-->
+      <!--<if test="createBy != null">-->
+        <!--CreateBy = #{createBy,jdbcType=VARCHAR},-->
+      <!--</if>-->
       <if test="updateDate != null">
         UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
       </if>
@@ -155,8 +155,8 @@
       CronExpression = #{cronExpression,jdbcType=VARCHAR},
       Status = #{status,jdbcType=TINYINT},
       Memo = #{memo,jdbcType=VARCHAR},
-      CreateDate = #{createDate,jdbcType=TIMESTAMP},
-      CreateBy = #{createBy,jdbcType=VARCHAR},
+--       CreateDate = #{createDate,jdbcType=TIMESTAMP},
+--       CreateBy = #{createBy,jdbcType=VARCHAR},
       UpdateDate = #{updateDate,jdbcType=TIMESTAMP},
       UpdateBy = #{updateBy,jdbcType=VARCHAR}
     where JobID = #{jobID,jdbcType=VARCHAR}
