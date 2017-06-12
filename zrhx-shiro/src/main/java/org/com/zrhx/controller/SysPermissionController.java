@@ -9,9 +9,7 @@ import org.com.zrhx.utill.R;
 import org.com.zrhx.utils.ShiroUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Map;
 
 /**
  * @Title: SysPermissionController
