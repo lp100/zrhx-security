@@ -21,6 +21,7 @@
         <module name="zrhx-schedule" />
         <module name="zrhx-shiro" />
         <module name="zrhx-template" />
+        <module name="zrhx-upload" />
         <module name="zrhx-web" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="zrhx-security" target="1.7" />
       <module name="zrhx-shiro" target="1.7" />
       <module name="zrhx-template" target="1.7" />
+      <module name="zrhx-upload" target="1.7" />
       <module name="zrhx-web" target="1.7" />
       <module name="zrhx-webmvc" target="1.7" />
     </bytecodeTargetLevel>

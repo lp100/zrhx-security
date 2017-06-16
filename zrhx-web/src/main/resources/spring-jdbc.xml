@@ -13,7 +13,7 @@
 		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
 
 
-	<context:property-placeholder location="classpath:db.properties" />
+	<context:property-placeholder ignore-unresolvable="true" location="classpath:db.properties" />
 
 
 

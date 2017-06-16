@@ -28,7 +28,7 @@ import java.io.IOException;
  * @date: 2017/5/27 9:32
  */
 @Controller
-public class SysLoginController {
+public class SysLoginController extends BaseController<SysLoginController>{
 	@Autowired
 	private Producer producer;
 	
@@ -64,6 +64,7 @@ public class SysLoginController {
 			//md5加密
 			password = MD5Util.MD5Encode(password);
 			UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+//			token.setRememberMe(rememberMe);//设置记住我  自动登录
 			subject.login(token);
 		}catch (UnknownAccountException e) {
 			return R.error(e.getMessage());
@@ -74,7 +75,6 @@ public class SysLoginController {
 		}catch (AuthenticationException e) {
 			return R.error("账户验证失败");
 		}
-	    
 		return R.ok();
 	}
 	

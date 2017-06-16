@@ -100,8 +100,6 @@ public abstract class BaseServiceImpl<T extends BaseEntity<T> ,D extends BaseDao
 		t.setList(ids);
 		return returnResult(mapper.updateBatchFlag(t));
 	}
-
-
 	/**
 	 *
 	 * @Title: returnResult

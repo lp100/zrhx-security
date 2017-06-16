@@ -13,6 +13,7 @@ import org.com.zrhx.service.SysPermissionService;
 import org.com.zrhx.service.SysUserService;
 
 import org.com.zrhx.utill.Constants;
+import org.com.zrhx.utils.ShiroUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.*;
@@ -38,30 +39,43 @@ public class UserRealm extends AuthorizingRealm {
 		String userId = user.getUserID();
 		
 		List<String> permsList = null;
-		
-		//系统管理员，拥有最高权限
-		if(Constants.ADMINISTRATOR_USERID.equals(userId)){
-			List<SysPermission> permissionList = sysPermissionService.findListByWhere(null);
-			permsList = new ArrayList<>(permissionList.size());
-			for(SysPermission  menu : permissionList){
-				permsList.add(menu.getDescription());
+		Object sessionAttribute = ShiroUtils.getSessionAttribute(Constants.PERMISSION_LIST);
+		if (null==sessionAttribute){
+			//系统管理员，拥有最高权限
+			if(Constants.ADMINISTRATOR_USERID.equals(userId)){
+				List<SysPermission> permissionList = sysPermissionService.findListByWhere(null);
+				permsList = new ArrayList<>(permissionList.size());
+				for(SysPermission  menu : permissionList){
+					permsList.add(menu.getDescription());
+				}
+			}else{
+				permsList = sysUserService.queryAllPerms(userId);
 			}
+
+			//用户权限列表
+			Set<String> permsSet = new HashSet<String>();
+			for(String perms : permsList){
+				if(StringUtils.isBlank(perms)){
+					continue;
+				}
+				permsSet.addAll(Arrays.asList(perms.trim().split(",")));
+			}
+			SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+			info.setStringPermissions(permsSet);
+			ShiroUtils.setSessionAttribute(Constants.PERMISSION_LIST,permsSet);
+			return info;
 		}else{
-			permsList = sysUserService.queryAllPerms(userId);
+			Set<String> permsSet  = (Set<String>)	sessionAttribute ;
+			SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+			info.setStringPermissions(permsSet);
+			ShiroUtils.setSessionAttribute(Constants.PERMISSION_LIST,permsSet);
+			return info;
 		}
 
-		//用户权限列表
-		Set<String> permsSet = new HashSet<String>();
-		for(String perms : permsList){
-			if(StringUtils.isBlank(perms)){
-				continue;
-			}
-			permsSet.addAll(Arrays.asList(perms.trim().split(",")));
-		}
+
 		
-		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-		info.setStringPermissions(permsSet);
-		return info;
+
+
 	}
 
 	/**

@@ -1,16 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f2d8f3-007c-47e6-8a03-f569135f9b90" name="Default" comment="" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/out/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-common/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-gen/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-web/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-schedule/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-webmvc/target/" />
-    <ignored path="$PROJECT_DIR$/../zrhx-security/zrhx-template/target/" />
+    <list default="true" id="b5f2d8f3-007c-47e6-8a03-f569135f9b90" name="Default" comment="sql补充">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apkinfo_api_AXmlResourceParser_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_1_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/service/impl/SysPermissionService.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/controller/BaseController.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/controller/BaseController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/enity/BaseEntity.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/enity/BaseEntity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/log/service/SysLogService.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/log/service/SysLogService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/mapper/BaseDao.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/mapper/BaseDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/service/BaseService.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/service/BaseService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/service/Impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/service/Impl/BaseServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants$MenuType.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants$MenuType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants$ScheduleStatus.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants$ScheduleStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/IPUtils.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/IPUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/PageUtils.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/PageUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/R.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/RRExceptionHandler.class" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/utill/RRExceptionHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/zrhx-common-1.0.jar" afterPath="$PROJECT_DIR$/zrhx-common/target/zrhx-common-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-schedule/target/zrhx-schedule-1.0.jar" afterPath="$PROJECT_DIR$/zrhx-schedule/target/zrhx-schedule-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/controller/SysLoginController.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/controller/SysLoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysPermissionMapper.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysPermissionMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/service/SysPermissionService.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/service/SysPermissionService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/service/impl/SysUserServiceImpl.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/service/impl/SysUserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/shiro/UserRealm.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/shiro/UserRealm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/shiro/VelocityShiro.class" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/shiro/VelocityShiro.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/zrhx-shiro-1.0.jar" afterPath="$PROJECT_DIR$/zrhx-shiro/target/zrhx-shiro-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/controller/SysGeneratorController.class" afterPath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/controller/SysGeneratorController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/service/SysGeneratorService.class" afterPath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/service/SysGeneratorService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/service/impl/SysGeneratorServiceImpl.class" afterPath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/service/impl/SysGeneratorServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/utils/GenUtils.class" afterPath="$PROJECT_DIR$/zrhx-template/target/classes/org/com/zrhx/utils/GenUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/zrhx-template-1.0.jar" afterPath="$PROJECT_DIR$/zrhx-template/target/zrhx-template-1.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/target/classes/org/com/zrhx/aop/OperationLogAspect.class" afterPath="$PROJECT_DIR$/zrhx-web/target/classes/org/com/zrhx/aop/OperationLogAspect.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/target/zrhx-web.war" afterPath="$PROJECT_DIR$/zrhx-web/target/zrhx-web.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/zrhx_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/zrhx_web_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/sql/log.sql" afterPath="$PROJECT_DIR$/zrhx-common/sql/log.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/service/impl/BaseServiceImpl.java" afterPath="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/service/impl/BaseServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/generator/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/log/mapper/SysLogMapper.xml" afterPath="$PROJECT_DIR$/zrhx-common/target/classes/org/com/zrhx/log/mapper/SysLogMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/zrhx-common/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/zrhx-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/zrhx-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-common/zrhx-common.iml" afterPath="$PROJECT_DIR$/zrhx-common/zrhx-common.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-schedule/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/zrhx-schedule/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-schedule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/zrhx-schedule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-schedule/zrhx-schedule.iml" afterPath="$PROJECT_DIR$/zrhx-schedule/zrhx-schedule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-security.iml" afterPath="$PROJECT_DIR$/zrhx-security.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java" afterPath="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java" afterPath="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/src/main/resources/spring-shiro.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/src/main/resources/spring-shiro.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysPermissionMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysPermissionMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysRoleMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysRolePermissionMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysRolePermissionMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysUserMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysUserRoleMapper.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/org/com/zrhx/mapper/SysUserRoleMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/classes/spring-shiro.xml" afterPath="$PROJECT_DIR$/zrhx-shiro/target/classes/spring-shiro.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/zrhx-shiro/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/zrhx-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/zrhx-shiro/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-shiro/zrhx-shiro.iml" afterPath="$PROJECT_DIR$/zrhx-shiro/zrhx-shiro.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/zrhx-template/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-template/zrhx-template.iml" afterPath="$PROJECT_DIR$/zrhx-template/zrhx-template.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-upload/zrhx-upload.iml" afterPath="$PROJECT_DIR$/zrhx-upload/zrhx-upload.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/src/main/resources/spring-jdbc.xml" afterPath="$PROJECT_DIR$/zrhx-web/src/main/resources/spring-jdbc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/target/classes/spring-jdbc.xml" afterPath="$PROJECT_DIR$/zrhx-web/target/classes/spring-jdbc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/zrhx-web/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zrhx-web/zrhx-web.iml" afterPath="$PROJECT_DIR$/zrhx-web/zrhx-web.iml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-common/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-gen/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-web/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-schedule/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-webmvc/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-template/target/" />
+    <ignored path="$PROJECT_DIR$/zrhx-upload/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,59 +111,137 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="zrhx-security">
-      <favorite_root url="file://$PROJECT_DIR$/../zrhx-security/zrhx-web" module="zrhx-web" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
-        <favorite_root url="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/zrhx-web" module="zrhx-web" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/zrhx-web/pom.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
       </favorite_root>
-      <favorite_root url="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources" module="zrhx-web" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      <favorite_root url="file://$PROJECT_DIR$/zrhx-web/src/main/resources" module="zrhx-web" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
     </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="spring-shiro.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/resources/spring-shiro.xml">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/resources/spring-shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+            <state relative-caret-position="513">
+              <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysLogAnnotation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/annotation/SysLogAnnotation.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/mapper/BaseDao.java">
+      <file leaf-file-name="ehcache-shiro.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/resources/ehcache-shiro.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/service/Impl/BaseServiceImpl.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="162">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spring-jdbc.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/spring-jdbc.xml">
+      <file leaf-file-name="SysLoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+            <state relative-caret-position="27">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zrhx-common/sql/log.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-189">
+              <caret line="80" column="46" lean-forward="false" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShiroUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/utils/ShiroUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="837">
+              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#370#371#0" expanded="false" />
+                <element signature="e#423#424#0" expanded="false" />
+                <element signature="e#462#463#0" expanded="false" />
+                <element signature="e#502#503#0" expanded="false" />
+                <element signature="e#544#545#0" expanded="false" />
+                <element signature="e#609#610#0" expanded="false" />
+                <element signature="e#646#647#0" expanded="false" />
+                <element signature="e#687#688#0" expanded="false" />
+                <element signature="e#757#758#0" expanded="false" />
+                <element signature="e#801#802#0" expanded="false" />
+                <element signature="e#858#859#0" expanded="false" />
+                <element signature="e#902#903#0" expanded="false" />
+                <element signature="e#938#939#0" expanded="false" />
+                <element signature="e#1001#1002#0" expanded="false" />
+                <element signature="e#1033#1034#0" expanded="false" />
+                <element signature="e#1075#1076#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/spring-web/4.1.5.RELEASE/spring-web-4.1.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5319">
+              <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10767#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#2446#2447#0" expanded="false" />
+                <element signature="e#2472#2473#0" expanded="false" />
+                <element signature="e#2598#2599#0" expanded="false" />
+                <element signature="e#2625#2626#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserRealm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1404">
+              <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1722#1730#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5832">
+              <caret line="216" column="29" lean-forward="false" selection-start-line="216" selection-start-column="29" selection-end-line="216" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -101,35 +255,62 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>suppressAllComments</find>
-      <find>javaClientGenerator</find>
-      <find>Example_Where_Clause</find>
-      <find>driverClassName</find>
-      <find>updateByPrimaryKeySelective</find>
-      <find>deleteByPrimaryKey</find>
-      <find>insert</find>
-      <find>Dao</find>
-      <find>pathName</find>
-      <find>log4j</find>
-      <find>WebAppRootListener</find>
-      <find>&lt;shiro-version</find>
-      <find>shiro-version</find>
-      <find>shiroFilter</find>
-      <find>SysUserMapper</find>
-      <find>updateByPrimaryKey</find>
       <find>selectByPrimaryKey</find>
       <find>queryAllMenuId</find>
       <find>queryByLoginName</find>
       <find>queryByloginName</find>
+      <find>org.com.zrhx.model.ScheduleJobLog</find>
+      <find>io.renren.entity.ScheduleJobLogEntity</find>
+      <find>io.renren.entity.ScheduleJobEntity</find>
+      <find>ScheduleJob</find>
+      <find>org.com.zrhx.model.ScheduleJob</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysUserRole</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysDictionaryHeader</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysPermission</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysRole</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysRolePermission</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysUser</find>
+      <find>org.com.zrhx.org.com.zrhx.model.SysDictionaryLine</find>
+      <find>updateByPrimaryKey</find>
+      <find>org.com.zrhx.log.mapper.SysLogMapper</find>
+      <find>org.com.zrhx.org.com.zrhx.mapper.SysDictionaryHeaderMapper</find>
+      <find>findPageListByWhere</find>
+      <find>queryList</find>
+      <find>servlet</find>
+      <find>resultMap</find>
+      <find>&lt;resultMap id=&quot;BaseResultMap&quot; type=&quot;org.com.zrhx.model.ScheduleJobLog&quot;&gt;</find>
+      <find>menuItem</find>
+      <find>packAge</find>
+      <find>level</find>
+      <find>maxIdle</find>
+      <find>targetFilterLifecycle</find>
+      <find>connectionFactory</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>io.renren.entity.ScheduleJobLogEntity</replace>
+      <replace>org.com.zrhx.model.ScheduleJobLog</replace>
+      <replace>org.com.zrhx.model.ScheduleJob</replace>
+      <replace>ScheduleJobConfig</replace>
+      <replace>org.com.zrhx.model.ScheduleJobConfig</replace>
+      <replace>org.com.zrhx.model.SysUserRole</replace>
+      <replace>org.com.zrhx.model.SysDictionaryHeader</replace>
+      <replace>org.com.zrhx.model.SysPermission</replace>
+      <replace>org.com.zrhx.model.SysRole</replace>
+      <replace>org.com.zrhx.model.SysRolePermission</replace>
+      <replace>org.com.zrhx.model.SysUser</replace>
+      <replace>org.com.zrhx.model.SysDictionaryLine</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -137,66 +318,69 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobLogMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobConfigMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-template/src/main/java/org/com/zrhx/mapper/SysGeneratorMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/model/SysUser.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/model/SysDictionaryHeader.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/model/SysDictionaryLine.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/model/SysPermission.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/model/SysRole.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysLogMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysLogMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/sql/log.sql" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/sys/model/SysLog.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/sys/mapper/SysLogMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/mapper/SysLogMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/service/Impl/BaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/service/SysLogService.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/aop/OperationLogAspect.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-webmvc/pom.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/model/SysLog.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/pom.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/java/org/com/zrhx/aop/OperationLogAspect.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/impl/SysPermissionService.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/service/impl/SysGeneratorServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/mapper/SysGeneratorMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/mapper/BaseDao.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRolePermissionMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserRoleMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/mapper/SysLogMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRolePermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/mapper/SysLogMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/spring-jdbc.xml" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/annotation/MyBatisDao.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/impl/SysUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/list.html.vm" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/Dao.java.vm" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/Entity.java.vm" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/Service.java.vm" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/ServiceImpl.java.vm" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/java/org/com/zrhx/utils/GenUtils.java" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/menu.sql.vm" />
+        <option value="$PROJECT_DIR$/zrhx-upload/src/main/java/org/comm/zrhx/controller/FileOperateController.java" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/resources/ehcache-shiro.xml" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/utill/QueryUtil.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/utill/R.java" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/java/org/com/zrhx/controller/SysPageController.java" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/page/400.html" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/page/403.html" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/page/error/400.jsp" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/utill/RRExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/Controller.java.vm" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/velocity-toolbox.xml" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/resources/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/controller/ScheduleJobController.java" />
+        <option value="$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/controller/ScheduleJobLogController.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/mapper/BaseDao.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/enity/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/service/impl/ScheduleJobServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobConfigMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobLogMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml" />
+        <option value="$PROJECT_DIR$/zrhx-template/src/main/resources/template/Dao.xml.vm" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/service/impl/BaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysPermissionController.java" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/resources/spring-jdbc.xml" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/resources/redis.properties" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/resources/spring-session.xml" />
+        <option value="$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="D:/apache-maven-3.3.9/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class" />
+        <option value="D:/apache-maven-3.3.9/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar!/org/apache/commons/pool2/impl/BaseObjectPoolConfig.class" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/SessionDAO.java" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/CacheSessionDAO.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/utill/Servlets.java" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/JedisSessionDAO.java" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/resources/spring-shiro.xml" />
+        <option value="$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java" />
+        <option value="$PROJECT_DIR$/zrhx-common/sql/log.sql" />
       </list>
     </option>
   </component>
@@ -216,30 +400,6 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="zrhx-shiro" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="zrhx-shiro" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -324,87 +484,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,197 +554,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="annotation" />
+              <option name="myItemId" value="sql" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org.com.zrhx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-template" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-security" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zrhx-common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -701,6 +596,31 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zrhx-security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zrhx-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zrhx-security" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zrhx-common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -710,26 +630,27 @@
     <property name="project.structure.side.proportion" value="0.3776435" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cpcx-good-manage-master" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/zrhx-web/src/main/java" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\zrhx-security\zrhx-common\src\main\resources\generator" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\code\zrhx-security\zrhx-common\src\main\java\org\com\zrhx\utill" />
+      <recent name="F:\code\zrhx-security\zrhx-shiro\src\main\java\org\com\zrhx\shiro" />
+      <recent name="F:\code\zrhx-security\zrhx-web\src\main\webapp" />
+      <recent name="F:\code\zrhx-security\zrhx-web\src\main\webapp\WEB-INF" />
+      <recent name="F:\code\zrhx-security\zrhx-shiro\src\main\java\org\com\zrhx\controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.com.zrhx.aop" />
-      <recent name="org.com.zrhx.log.aop" />
       <recent name="org.com.zrhx.controller" />
       <recent name="org.com.zrhx.utill" />
+      <recent name="org.com.zrhx.aop" />
+      <recent name="org.com.zrhx.log.aop" />
       <recent name="org.com.zrhx.utils" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\zrhx-security\zrhx-web\src\main\webapp\WEB-INF" />
-      <recent name="F:\zrhx-security\zrhx-web\src\main\resources" />
-      <recent name="F:\zrhx-security\zrhx-web\src\main\webapp" />
-      <recent name="F:\zrhx-security\zrhx-common\src\main\java\org\com\zrhx\log\service" />
-      <recent name="F:\zrhx-security\zrhx-common\src\main\java\org\com\zrhx\mapper" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\zrhx-security\zrhx-common\src\main\resources\generator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -831,7 +752,7 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../zrhx-security" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -1239,10 +1160,10 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.27" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="zrhx-web:war">
+        <artifact name="zrhx-web:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -1307,7 +1228,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="zrhx-web:war" />
+          <artifact name="zrhx-web:war exploded" />
         </option>
       </method>
     </configuration>
@@ -1330,11 +1251,284 @@
       <workItem from="1495877293615" duration="2001000" />
       <workItem from="1496192512684" duration="5644000" />
       <workItem from="1496299074263" duration="12758000" />
+      <workItem from="1496385602367" duration="5184000" />
+      <workItem from="1496710327325" duration="63338000" />
+      <workItem from="1496906676423" duration="27887000" />
+      <workItem from="1497230605221" duration="20052000" />
+      <workItem from="1497322721020" duration="10670000" />
+      <workItem from="1497488451960" duration="3840000" />
     </task>
+    <task id="LOCAL-00001" summary="增加模板">
+      <created>1496385785025</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1496385785025</updated>
+    </task>
+    <task id="LOCAL-00002" summary="id生成器">
+      <created>1496737805331</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1496737805331</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加公共类">
+      <created>1496737880529</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1496737880529</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加文件上传">
+      <created>1496737925309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1496737925309</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加读取apk信息jar包">
+      <created>1496738091544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1496738091544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="完善代码">
+      <created>1496807930765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1496807930765</updated>
+    </task>
+    <task id="LOCAL-00007" summary="修改模板">
+      <created>1496817152478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1496817152478</updated>
+    </task>
+    <task id="LOCAL-00008" summary="优化代码">
+      <created>1496823031339</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1496823031339</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sql补充">
+      <created>1496823873723</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1496823873723</updated>
+    </task>
+    <task id="LOCAL-00010" summary="增加权限查询">
+      <created>1496829189049</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1496829189049</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sql补充">
+      <created>1496829852322</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1496829852322</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sql补充">
+      <created>1496829949903</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1496829949903</updated>
+    </task>
+    <task id="LOCAL-00013" summary="正则验证工具类">
+      <created>1496883983417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1496883983417</updated>
+    </task>
+    <task id="LOCAL-00014" summary="优化模板代码">
+      <created>1496911920762</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1496911920762</updated>
+    </task>
+    <task id="LOCAL-00015" summary="优化代码">
+      <created>1496912061578</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1496912061578</updated>
+    </task>
+    <task id="LOCAL-00016" summary="优化模板代码">
+      <created>1496912175197</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1496912175197</updated>
+    </task>
+    <task id="LOCAL-00017" summary="优化模板代码">
+      <created>1496914182659</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1496914182659</updated>
+    </task>
+    <task id="LOCAL-00018" summary="优化模板代码">
+      <created>1496914209479</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1496914209479</updated>
+    </task>
+    <task id="LOCAL-00019" summary="优化模板代码">
+      <created>1496914373663</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1496914373663</updated>
+    </task>
+    <task id="LOCAL-00020" summary="系统页面视图">
+      <created>1496915044157</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1496915044157</updated>
+    </task>
+    <task id="LOCAL-00021" summary="增加eacache">
+      <created>1496916963471</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1496916963471</updated>
+    </task>
+    <task id="LOCAL-00022" summary="查询工具">
+      <created>1496969757779</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1496969757779</updated>
+    </task>
+    <task id="LOCAL-00023" summary="查询工具">
+      <created>1496969782220</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1496969782220</updated>
+    </task>
+    <task id="LOCAL-00024" summary="sql补充">
+      <created>1496971498721</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1496971498721</updated>
+    </task>
+    <task id="LOCAL-00025" summary="优化代码">
+      <created>1496979114574</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1496979114574</updated>
+    </task>
+    <task id="LOCAL-00026" summary="sql补充">
+      <created>1496988757046</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1496988757046</updated>
+    </task>
+    <task id="LOCAL-00027" summary="完善代码">
+      <created>1496988803778</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1496988803778</updated>
+    </task>
+    <task id="LOCAL-00028" summary="优化模板代码">
+      <created>1496999912050</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1496999912050</updated>
+    </task>
+    <task id="LOCAL-00029" summary="完善代码">
+      <created>1497000189146</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1497000189146</updated>
+    </task>
+    <task id="LOCAL-00030" summary="完善代码">
+      <created>1497002294591</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1497002294591</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修改日志文件">
+      <created>1497002500651</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1497002500651</updated>
+    </task>
+    <task id="LOCAL-00032" summary="完善代码">
+      <created>1497231312823</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1497231312823</updated>
+    </task>
+    <task id="LOCAL-00033" summary="sql补充">
+      <created>1497231512299</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1497231512299</updated>
+    </task>
+    <task id="LOCAL-00034" summary="完善代码">
+      <created>1497231547686</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1497231547686</updated>
+    </task>
+    <task id="LOCAL-00035" summary="完善代码">
+      <created>1497231876098</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1497231876098</updated>
+    </task>
+    <task id="LOCAL-00036" summary="完善代码">
+      <created>1497231930927</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1497231930927</updated>
+    </task>
+    <task id="LOCAL-00037" summary="完善代码">
+      <created>1497232358856</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1497232358856</updated>
+    </task>
+    <task id="LOCAL-00038" summary="完善代码">
+      <created>1497234729456</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1497234729456</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89467000" />
+    <option name="totallyTimeSpent" value="220438000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1348,41 +1542,42 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.496208" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.496208" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.496208" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.496208" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2990249" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4078091" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36511377" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36442515" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25912017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27521458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.496208" order="9" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.496208" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="92" y="92" width="1724" height="856" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.503792" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.503792" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1391,9 +1586,36 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加模板" />
+    <MESSAGE value="id生成器" />
+    <MESSAGE value="增加公共类" />
+    <MESSAGE value="增加文件上传" />
+    <MESSAGE value="增加读取apk信息jar包" />
+    <MESSAGE value="修改模板" />
+    <MESSAGE value="增加权限查询" />
+    <MESSAGE value="正则验证工具类" />
+    <MESSAGE value="系统页面视图" />
+    <MESSAGE value="增加eacache" />
+    <MESSAGE value="查询工具" />
+    <MESSAGE value="优化代码" />
+    <MESSAGE value="优化模板代码" />
+    <MESSAGE value="修改日志文件" />
+    <MESSAGE value="sql补充" />
+    <MESSAGE value="完善代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善代码" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/zrhx-web/src/main/java/org/com/zrhx/aop/OperationLogAspect.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1402,492 +1624,363 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/zrhx-shiro.iml">
+    <entry file="file://$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/service/impl/BaseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="70" column="14" lean-forward="false" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/statics/plugins/jqgrid/ui.jqgrid-bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/xss/XssHttpServletRequestWrapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/statics/plugins/jqgrid/ui.jqgrid.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1128">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/xss/XssFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="69" lean-forward="false" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="40" column="51" lean-forward="false" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/enity/BaseEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/SysPermissionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/impl/SysPermissionService.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/js/sys/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#596#597#0" expanded="false" />
-            <element signature="e#665#666#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#767#768#0" expanded="false" />
-            <element signature="e#794#795#0" expanded="false" />
-          </folding>
+          <caret line="37" column="16" lean-forward="false" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/controller/SysGeneratorController.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/page/sys/config.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="428">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/service/SysGeneratorService.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/java/org/com/zrhx/controller/SysPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="513">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/mapper/SysGeneratorMapper.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-template/src/main/java/org/com/zrhx/service/impl/SysGeneratorServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1495765675330" expanded="true" signature="407:424" ph="select datab... " />
-            <marker date="1495765675330" expanded="true" signature="802:819" ph="select datab... " />
-            <marker date="1495765675330" expanded="true" signature="1013:1206" ph="select table... tables" />
-            <marker date="1495765675330" expanded="true" signature="1158:1175" ph="select datab... " />
-            <marker date="1495765675330" expanded="true" signature="1278:1519" ph="select colum... columns" />
-            <marker date="1495765675330" expanded="true" signature="1475:1492" ph="select datab... " />
-          </folding>
+        <state relative-caret-position="162">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/service/impl/SysGeneratorServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-template/src/main/java/org/com/zrhx/service/SysGeneratorService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#683#684#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="5238">
+          <caret line="194" column="85" lean-forward="false" selection-start-line="194" selection-start-column="85" selection-end-line="194" selection-end-column="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/utils/ShiroUtils.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="6048">
+          <caret line="224" column="83" lean-forward="false" selection-start-line="224" selection-start-column="83" selection-end-line="224" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/resources/mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="5130">
+          <caret line="190" column="38" lean-forward="false" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="4644">
+          <caret line="172" column="75" lean-forward="false" selection-start-line="172" selection-start-column="75" selection-end-line="172" selection-end-column="75" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="4212">
+          <caret line="156" column="46" lean-forward="false" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRolePermissionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-template/src/main/java/org/com/zrhx/mapper/SysGeneratorMapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobConfigMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding />
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserRoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-schedule/src/main/java/org/com/zrhx/mapper/ScheduleJobConfigMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="644">
+          <caret line="234" column="11" lean-forward="false" selection-start-line="227" selection-start-column="1" selection-end-line="234" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryLineMapper.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-template/src/main/resources/template/Dao.xml.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="129" column="11" lean-forward="false" selection-start-line="129" selection-start-column="11" selection-end-line="129" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysPermissionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="43" column="59" lean-forward="false" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/spring-beans/4.1.5.RELEASE/spring-beans-4.1.5.RELEASE-sources.jar!/org/springframework/beans/factory/DisposableBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/spring-beans/4.1.5.RELEASE/spring-beans-4.1.5.RELEASE-sources.jar!/org/springframework/beans/factory/InitializingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/data/spring-data-redis/1.4.1.RELEASE/spring-data-redis-1.4.1.RELEASE.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/resources/db.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding>
-            <marker date="1496302941899" expanded="true" signature="1424:1547" ph="select from sys_dictionary_line" />
-            <marker date="1496302941899" expanded="true" signature="1632:1709" ph="delete from " />
-            <marker date="1496302941899" expanded="true" signature="4556:5706" ph="update sys_d... " />
-            <marker date="1496302941899" expanded="true" signature="5811:6403" ph="update sys_d... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-          <folding>
-            <marker date="1496302990809" expanded="true" signature="1083:1195" ph="select from sys_role" />
-            <marker date="1496302990809" expanded="true" signature="1280:1346" ph="delete from " />
-            <marker date="1496302990809" expanded="true" signature="3377:4144" ph="update sys_r... " />
-            <marker date="1496302990809" expanded="true" signature="4239:4640" ph="update sys_r... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-          <folding>
-            <marker date="1496303029876" expanded="true" signature="668:793" ph="select from sys_user_role" />
-            <marker date="1496303029876" expanded="true" signature="878:957" ph="delete from " />
-            <marker date="1496303029876" expanded="true" signature="1044:1212" ph="insert into sys_user_role... " />
-            <marker date="1496303029876" expanded="true" signature="2020:2295" ph="update sys_u... " />
-            <marker date="1496303029876" expanded="true" signature="2394:2555" ph="update sys_u... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/mapper/SysLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="275" column="9" lean-forward="false" selection-start-line="275" selection-start-column="9" selection-end-line="275" selection-end-column="9" />
-          <folding>
-            <marker date="1496302669362" expanded="true" signature="1844:1953" ph="select from sys_log" />
-            <marker date="1496302669362" expanded="true" signature="2038:2101" ph="delete from " />
-            <marker date="1496302669362" expanded="true" signature="2187:2994" ph="insert into sys_log... " />
-            <marker date="1496302669362" expanded="true" signature="5879:7503" ph="update sys_l... " />
-            <marker date="1496302669362" expanded="true" signature="7601:8436" ph="update sys_l... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysRolePermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="64" lean-forward="false" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
-          <folding>
-            <marker date="1496303011953" expanded="true" signature="698:829" ph="select from sys_role_permission" />
-            <marker date="1496303011953" expanded="true" signature="914:999" ph="delete from " />
-            <marker date="1496303011953" expanded="true" signature="1092:1278" ph="insert into sys_role_permission... " />
-            <marker date="1496303011953" expanded="true" signature="2128:2427" ph="update sys_r... " />
-            <marker date="1496303011953" expanded="true" signature="2532:2711" ph="update sys_r... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysPermissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="197" column="11" lean-forward="false" selection-start-line="197" selection-start-column="11" selection-end-line="197" selection-end-column="11" />
-          <folding>
-            <marker date="1496303154218" expanded="true" signature="1670:1800" ph="select from sys_permission" />
-            <marker date="1496303154218" expanded="true" signature="1885:1969" ph="delete from " />
-            <marker date="1496303154218" expanded="true" signature="5354:6775" ph="update sys_p... " />
-            <marker date="1496303154218" expanded="true" signature="6876:7617" ph="update sys_p... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysDictionaryHeaderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="130" column="32" lean-forward="false" selection-start-line="130" selection-start-column="14" selection-end-line="130" selection-end-column="32" />
-          <folding>
-            <marker date="1496302941860" expanded="true" signature="1231:1364" ph="select from sys_dictionary_header" />
-            <marker date="1496302941860" expanded="true" signature="1449:1536" ph="delete from " />
-            <marker date="1496302941860" expanded="true" signature="1631:2109" ph="insert into sys_dictionary_header... " />
-            <marker date="1496302941860" expanded="true" signature="3905:4813" ph="update sys_d... " />
-            <marker date="1496302941860" expanded="true" signature="4920:5405" ph="update sys_d... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4058">
-          <caret line="209" column="32" lean-forward="false" selection-start-line="209" selection-start-column="19" selection-end-line="209" selection-end-column="32" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/java/org/com/zrhx/aop/OperationLogAspect.java">
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/spring-web/4.1.5.RELEASE/spring-web-4.1.5.RELEASE-sources.jar!/org/springframework/web/filter/DelegatingFilterProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="1512">
+          <caret line="80" column="13" lean-forward="false" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/service/SysLogService.java">
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/data/spring-data-redis/1.4.1.RELEASE/spring-data-redis-1.4.1.RELEASE.jar!/org/springframework/data/redis/connection/RedisConnectionFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/session/spring-session/1.0.1.RELEASE/spring-session-1.0.1.RELEASE.jar!/org/springframework/session/data/redis/config/annotation/web/http/RedisHttpSessionConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/resources/redis.properties" />
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/resources/spring-session.xml" />
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/resources/spring-jdbc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/log/mapper/SysLogMapper.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/resources/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="842">
+          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/mgt/RememberMeManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar!/org/apache/commons/pool2/impl/BaseObjectPoolConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/redis/clients/jedis/2.5.2/jedis-2.5.2.jar!/redis/clients/jedis/JedisPoolConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/mgt/SessionsSecurityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/mgt/DefaultSecurityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="70" column="54" lean-forward="false" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar!/org/apache/shiro/web/mgt/DefaultWebSecurityManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2-sources.jar!/org/apache/shiro/session/mgt/DefaultSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/apache/shiro/shiro-web/1.3.2/shiro-web-1.3.2.jar!/org/apache/shiro/web/session/mgt/DefaultWebSessionManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="26" column="55" lean-forward="false" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/SessionDAO.java" />
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-common/src/main/java/org/com/zrhx/utill/Servlets.java" />
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/CacheSessionDAO.java" />
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/session/JedisSessionDAO.java" />
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/resources/ehcache-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="89" column="2" lean-forward="false" selection-start-line="89" selection-start-column="2" selection-end-line="89" selection-end-column="2" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-maven-3.3.9/repository/org/mybatis/mybatis-spring/1.3.0/mybatis-spring-1.3.0-sources.jar!/org/mybatis/spring/SqlSessionFactoryBean.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/resources/spring-shiro.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-688">
-          <caret line="76" column="13" lean-forward="false" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        <state relative-caret-position="513">
+          <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/SysUserService.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="162">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_02/src.zip!/java/net/DualStackPlainSocketImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="258" column="22" lean-forward="false" selection-start-line="258" selection-start-column="22" selection-end-line="258" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/service/BaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/annotation/MyBatisDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="1404">
+          <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1722#1730#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/service/impl/SysUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        <state relative-caret-position="5832">
+          <caret line="216" column="29" lean-forward="false" selection-start-line="216" selection-start-column="29" selection-end-line="216" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/mapper/SysUserMapper.xml">
+    <entry file="jar://D:/apache-maven-3.3.9/repository/org/springframework/spring-web/4.1.5.RELEASE/spring-web-4.1.5.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1746">
-          <caret line="233" column="31" lean-forward="false" selection-start-line="233" selection-start-column="31" selection-end-line="233" selection-end-column="31" />
+        <state relative-caret-position="5319">
+          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
           <folding>
-            <marker date="1496311272175" expanded="true" signature="1343:1455" ph="select from sys_user" />
-            <marker date="1496311272175" expanded="true" signature="1540:1606" ph="delete from " />
-            <marker date="1496311272175" expanded="true" signature="1689:2216" ph="insert into sys_user... " />
-            <marker date="1496311272175" expanded="true" signature="4239:5303" ph="update sys_u... " />
-            <marker date="1496311272175" expanded="true" signature="5398:5946" ph="update sys_u... " />
-            <marker date="1496311272175" expanded="true" signature="8130:8426" ph="select m.Des... sys_user_role" />
-            <marker date="1496311272175" expanded="true" signature="8562:8708" ph="select disti... sys_user_role" />
-            <marker date="1496311272175" expanded="true" signature="8800:8903" ph="update sys_u... " />
-            <marker date="1496311272175" expanded="true" signature="9013:9086" ph="select * fro... sys_user" />
+            <element signature="e#0#10767#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2446#2447#0" expanded="false" />
+            <element signature="e#2472#2473#0" expanded="false" />
+            <element signature="e#2598#2599#0" expanded="false" />
+            <element signature="e#2625#2626#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/java/org/com/zrhx/shiro/UserRealm.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/utils/ShiroUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="837">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#370#371#0" expanded="false" />
+            <element signature="e#423#424#0" expanded="false" />
+            <element signature="e#462#463#0" expanded="false" />
+            <element signature="e#502#503#0" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#646#647#0" expanded="false" />
+            <element signature="e#687#688#0" expanded="false" />
+            <element signature="e#757#758#0" expanded="false" />
+            <element signature="e#801#802#0" expanded="false" />
+            <element signature="e#858#859#0" expanded="false" />
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#938#939#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1033#1034#0" expanded="false" />
+            <element signature="e#1075#1076#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/zrhx-shiro/src/main/java/org/com/zrhx/controller/SysLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2616">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="27">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/apache-maven-3.3.9/repository/org/mybatis/mybatis-spring/1.3.0/mybatis-spring-1.3.0-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java">
+    <entry file="file://$PROJECT_DIR$/zrhx-common/sql/log.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="94" column="3" lean-forward="true" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-shiro/src/main/resources/spring-shiro.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="61" column="11" lean-forward="true" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/annotation/SysLogAnnotation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/mapper/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-common/src/main/java/org/com/zrhx/service/Impl/BaseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../zrhx-security/zrhx-web/src/main/resources/spring-jdbc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+        <state relative-caret-position="-189">
+          <caret line="80" column="46" lean-forward="false" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1946,7 +2039,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>zrhx-web</last-edited>
+          <last-edited>zrhx-common</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
