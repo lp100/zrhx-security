@@ -147,6 +147,7 @@ CREATE TABLE `sys_user` (
   `Password` varchar(80) NOT NULL COMMENT '密码',
   `LoginIP` varchar(18) DEFAULT NULL COMMENT '登陆',
   `Memo` varchar(500) DEFAULT NULL COMMENT '备注',
+  `EnabledFlag` varchar(1) DEFAULT '0' COMMENT '可用状态',
   `UserName` varchar(80) DEFAULT NULL COMMENT '姓名',
   `CreateBy` varchar(32) DEFAULT NULL COMMENT '创建者',
   `CreateDate` datetime DEFAULT NULL COMMENT '创建日期',
@@ -199,3 +200,4 @@ INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`Perm
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`, `PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`) VALUES ('12', '6', 'scheduleResume', '恢复', NULL, 'sys:schedule:resume', '2', NULL, '0');
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`) VALUES ('13', '6', 'scheduleRun','立即执行', NULL, 'sys:schedule:run', '2', NULL, '0');
 INSERT INTO `sys_permission` (`PermissionID`, `ParentID`, `PermissionCode`,`PermissionName`, `url`, `Description`, `PermissionType`, `Memo`, `PermissionSN`) VALUES ('14', '6', 'scheduleLogManager', '日志列表', NULL, 'sys:schedule:log', '2', NULL, '0');
+INSERT INTO `sys_permission` VALUES ('28', '代码生成器', 'generator', 'sys:generator:list,sys:generator:code', '1', '8', null, '1', null, '0', null, null, null, null);
