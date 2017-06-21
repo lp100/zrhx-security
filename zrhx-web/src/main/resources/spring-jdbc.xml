@@ -84,8 +84,8 @@
 	<bean id="druid-stat-pointcut" class="org.springframework.aop.support.JdkRegexpMethodPointcut" scope="prototype">
 		<property name="patterns">
 			<list>
-				<value>org.com.zrhx.org.com.zrhx.controller.*</value>
-				<value>org.com.zrhx.org.com.zrhx.service.*</value>
+				<value>org.com.zrhx.controller.*</value>
+				<value>org.com.zrhx.service.*</value>
 			</list>
 		</property>
 	</bean>
