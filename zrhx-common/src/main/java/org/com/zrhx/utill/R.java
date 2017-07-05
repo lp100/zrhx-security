@@ -1,5 +1,9 @@
 package org.com.zrhx.utill;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiResponse;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,6 +13,7 @@ import java.util.Map;
  * @author: gs
  * @date: 2017/6/9 9:39
  */
+@ApiModel(value = "返回信息",description = "返回信息 ")
 public class R extends HashMap<String, Object> {
 	private static final long serialVersionUID = 1L;
 	

@@ -11,6 +11,7 @@
       classpath:spring-jdbc.xml
       classpath:spring-shiro.xml
       classpath:spring-scheduler.xml
+      classpath:spring-api.xml
     </param-value>
   </context-param>
 

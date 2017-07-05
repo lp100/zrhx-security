@@ -15,6 +15,7 @@
         <module>zrhx-template</module>
         <module>zrhx-web</module>
         <module>zrhx-upload</module>
+        <module>zrhx-api</module>
     </modules>
     <properties>
         <zrhx-version>1.0</zrhx-version>
@@ -52,7 +53,7 @@
         <xstream-version>1.4.9</xstream-version>
         <json-lib-version>2.4</json-lib-version>
         <aspectjweaver-version>1.8.9</aspectjweaver-version>
-        <jackson-version>1.2.32</jackson-version>
+        <fastjson-version>1.2.32</fastjson-version>
         <dom4j-version>1.6.1</dom4j-version>
         <freemarker-version>2.3.23</freemarker-version>
         <zxing-version>3.3.0</zxing-version>
@@ -62,6 +63,8 @@
         <java.home>C:\Program Files\Java\jdk1.7.0_02</java.home>
         <hutool-version>2.16.0</hutool-version>
         <quartz-version>2.2.3</quartz-version>
+        <swagger-version>2.4.0</swagger-version>
+        <jackson-version>2.6.5</jackson-version>
     </properties>
     <!-- 阿里云maven仓库 -->
     <repositories>
@@ -189,7 +192,7 @@
     <dependency>
         <groupId>com.alibaba</groupId>
         <artifactId>fastjson</artifactId>
-        <version>${jackson-version}</version>
+        <version>${fastjson-version}</version>
     </dependency>
     <dependency>
         <groupId>commons-codec</groupId>
@@ -320,11 +323,6 @@
             <version>1.1.2</version>
         </dependency>
         <dependency>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-            <version>1.10</version>
-        </dependency>
-        <dependency>
             <groupId>com.zrhx.mina</groupId>
             <artifactId>mina-server</artifactId>
             <version>${mina-server-version}</version>
@@ -378,6 +376,34 @@
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>2.5.2</version>
+        </dependency>
+        <!-- swagger-mvc -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger-version}</version>
+        </dependency>
+        <!-- swagger-mvc -->
+        <!-- json -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson-version}</version>
         </dependency>
     </dependencies>
     <build>
